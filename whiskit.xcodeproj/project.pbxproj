@@ -14,6 +14,11 @@
 		FDDA2DCF2CAF8D0700DA7957 /* whiskitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DCE2CAF8D0700DA7957 /* whiskitTests.swift */; };
 		FDDA2DD92CAF8D0700DA7957 /* whiskitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DD82CAF8D0700DA7957 /* whiskitUITests.swift */; };
 		FDDA2DDB2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */; };
+		FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */; };
+		FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */; };
+		FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */; };
+		FDDA2DF62CAF8F6A00DA7957 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF52CAF8F6A00DA7957 /* CreateView.swift */; };
+		FDDA2DFA2CAF9B2100DA7957 /* RecipeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		FDDA2DD42CAF8D0700DA7957 /* whiskitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whiskitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA2DD82CAF8D0700DA7957 /* whiskitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitUITests.swift; sourceTree = "<group>"; };
 		FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		FDDA2DF52CAF8F6A00DA7957 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,9 @@
 		FDDA2DBB2CAF8D0600DA7957 /* whiskit */ = {
 			isa = PBXGroup;
 			children = (
+				FDDA2DE92CAF8D4200DA7957 /* Protocols */,
+				FDDA2DE82CAF8D3C00DA7957 /* Services */,
+				FDDA2DE72CAF8D3000DA7957 /* Views */,
 				FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */,
 				FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */,
 				FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */,
@@ -127,6 +140,64 @@
 				FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */,
 			);
 			path = whiskitUITests;
+			sourceTree = "<group>";
+		};
+		FDDA2DE72CAF8D3000DA7957 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DF42CAF8F5B00DA7957 /* Create */,
+				FDDA2DF32CAF8E6D00DA7957 /* Browse */,
+				FDDA2DEE2CAF8DEF00DA7957 /* Home */,
+				FDDA2DED2CAF8DE900DA7957 /* Shared */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDDA2DE82CAF8D3C00DA7957 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FDDA2DE92CAF8D4200DA7957 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FDDA2DED2CAF8DE900DA7957 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FDDA2DEE2CAF8DEF00DA7957 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDDA2DF32CAF8E6D00DA7957 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */,
+				FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		FDDA2DF42CAF8F5B00DA7957 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DF52CAF8F6A00DA7957 /* CreateView.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDA2DFA2CAF9B2100DA7957 /* RecipeTileView.swift in Sources */,
+				FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */,
 				FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */,
+				FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */,
+				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
+				FDDA2DF62CAF8F6A00DA7957 /* CreateView.swift in Sources */,
 				FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
