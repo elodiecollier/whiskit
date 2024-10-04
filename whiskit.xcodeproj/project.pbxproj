@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */; };
+		FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */; };
+		FDDA2DC12CAF8D0700DA7957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */; };
+		FDDA2DC52CAF8D0700DA7957 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA2DC42CAF8D0700DA7957 /* Preview Assets.xcassets */; };
+		FDDA2DCF2CAF8D0700DA7957 /* whiskitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DCE2CAF8D0700DA7957 /* whiskitTests.swift */; };
+		FDDA2DD92CAF8D0700DA7957 /* whiskitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DD82CAF8D0700DA7957 /* whiskitUITests.swift */; };
+		FDDA2DDB2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDDA2DCB2CAF8D0700DA7957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDA2DB12CAF8D0600DA7957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDA2DB82CAF8D0600DA7957;
+			remoteInfo = whiskit;
+		};
+		FDDA2DD52CAF8D0700DA7957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDA2DB12CAF8D0600DA7957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDA2DB82CAF8D0600DA7957;
+			remoteInfo = whiskit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDDA2DB92CAF8D0600DA7957 /* whiskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitApp.swift; sourceTree = "<group>"; };
+		FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDDA2DC22CAF8D0700DA7957 /* whiskit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = whiskit.entitlements; sourceTree = "<group>"; };
+		FDDA2DC42CAF8D0700DA7957 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDDA2DCA2CAF8D0700DA7957 /* whiskitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whiskitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA2DCE2CAF8D0700DA7957 /* whiskitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitTests.swift; sourceTree = "<group>"; };
+		FDDA2DD42CAF8D0700DA7957 /* whiskitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whiskitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA2DD82CAF8D0700DA7957 /* whiskitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitUITests.swift; sourceTree = "<group>"; };
+		FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDDA2DB62CAF8D0600DA7957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA2DC72CAF8D0700DA7957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA2DD12CAF8D0700DA7957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDDA2DB02CAF8D0600DA7957 = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DBB2CAF8D0600DA7957 /* whiskit */,
+				FDDA2DCD2CAF8D0700DA7957 /* whiskitTests */,
+				FDDA2DD72CAF8D0700DA7957 /* whiskitUITests */,
+				FDDA2DBA2CAF8D0600DA7957 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDDA2DBA2CAF8D0600DA7957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DB92CAF8D0600DA7957 /* whiskit.app */,
+				FDDA2DCA2CAF8D0700DA7957 /* whiskitTests.xctest */,
+				FDDA2DD42CAF8D0700DA7957 /* whiskitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDDA2DBB2CAF8D0600DA7957 /* whiskit */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */,
+				FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */,
+				FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */,
+				FDDA2DC22CAF8D0700DA7957 /* whiskit.entitlements */,
+				FDDA2DC32CAF8D0700DA7957 /* Preview Content */,
+			);
+			path = whiskit;
+			sourceTree = "<group>";
+		};
+		FDDA2DC32CAF8D0700DA7957 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DC42CAF8D0700DA7957 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDDA2DCD2CAF8D0700DA7957 /* whiskitTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DCE2CAF8D0700DA7957 /* whiskitTests.swift */,
+			);
+			path = whiskitTests;
+			sourceTree = "<group>";
+		};
+		FDDA2DD72CAF8D0700DA7957 /* whiskitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA2DD82CAF8D0700DA7957 /* whiskitUITests.swift */,
+				FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */,
+			);
+			path = whiskitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDDA2DB82CAF8D0600DA7957 /* whiskit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDA2DDE2CAF8D0700DA7957 /* Build configuration list for PBXNativeTarget "whiskit" */;
+			buildPhases = (
+				FDDA2DB52CAF8D0600DA7957 /* Sources */,
+				FDDA2DB62CAF8D0600DA7957 /* Frameworks */,
+				FDDA2DB72CAF8D0600DA7957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whiskit;
+			productName = whiskit;
+			productReference = FDDA2DB92CAF8D0600DA7957 /* whiskit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDDA2DC92CAF8D0700DA7957 /* whiskitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDA2DE12CAF8D0700DA7957 /* Build configuration list for PBXNativeTarget "whiskitTests" */;
+			buildPhases = (
+				FDDA2DC62CAF8D0700DA7957 /* Sources */,
+				FDDA2DC72CAF8D0700DA7957 /* Frameworks */,
+				FDDA2DC82CAF8D0700DA7957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDA2DCC2CAF8D0700DA7957 /* PBXTargetDependency */,
+			);
+			name = whiskitTests;
+			productName = whiskitTests;
+			productReference = FDDA2DCA2CAF8D0700DA7957 /* whiskitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDDA2DD32CAF8D0700DA7957 /* whiskitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDA2DE42CAF8D0700DA7957 /* Build configuration list for PBXNativeTarget "whiskitUITests" */;
+			buildPhases = (
+				FDDA2DD02CAF8D0700DA7957 /* Sources */,
+				FDDA2DD12CAF8D0700DA7957 /* Frameworks */,
+				FDDA2DD22CAF8D0700DA7957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDA2DD62CAF8D0700DA7957 /* PBXTargetDependency */,
+			);
+			name = whiskitUITests;
+			productName = whiskitUITests;
+			productReference = FDDA2DD42CAF8D0700DA7957 /* whiskitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDDA2DB12CAF8D0600DA7957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FDDA2DB82CAF8D0600DA7957 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					FDDA2DC92CAF8D0700DA7957 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FDDA2DB82CAF8D0600DA7957;
+					};
+					FDDA2DD32CAF8D0700DA7957 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FDDA2DB82CAF8D0600DA7957;
+					};
+				};
+			};
+			buildConfigurationList = FDDA2DB42CAF8D0600DA7957 /* Build configuration list for PBXProject "whiskit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDDA2DB02CAF8D0600DA7957;
+			productRefGroup = FDDA2DBA2CAF8D0600DA7957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDDA2DB82CAF8D0600DA7957 /* whiskit */,
+				FDDA2DC92CAF8D0700DA7957 /* whiskitTests */,
+				FDDA2DD32CAF8D0700DA7957 /* whiskitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDDA2DB72CAF8D0600DA7957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA2DC52CAF8D0700DA7957 /* Preview Assets.xcassets in Resources */,
+				FDDA2DC12CAF8D0700DA7957 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA2DC82CAF8D0700DA7957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA2DD22CAF8D0700DA7957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDDA2DB52CAF8D0600DA7957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */,
+				FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA2DC62CAF8D0700DA7957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA2DCF2CAF8D0700DA7957 /* whiskitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDA2DD02CAF8D0700DA7957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDA2DDB2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift in Sources */,
+				FDDA2DD92CAF8D0700DA7957 /* whiskitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDDA2DCC2CAF8D0700DA7957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDA2DB82CAF8D0600DA7957 /* whiskit */;
+			targetProxy = FDDA2DCB2CAF8D0700DA7957 /* PBXContainerItemProxy */;
+		};
+		FDDA2DD62CAF8D0700DA7957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDA2DB82CAF8D0600DA7957 /* whiskit */;
+			targetProxy = FDDA2DD52CAF8D0700DA7957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FDDA2DDC2CAF8D0700DA7957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDDA2DDD2CAF8D0700DA7957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FDDA2DDF2CAF8D0700DA7957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = whiskit/whiskit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"whiskit/Preview Content\"";
+				DEVELOPMENT_TEAM = SJ2H2N46FJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDDA2DE02CAF8D0700DA7957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = whiskit/whiskit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"whiskit/Preview Content\"";
+				DEVELOPMENT_TEAM = SJ2H2N46FJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDDA2DE22CAF8D0700DA7957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJ2H2N46FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whiskit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/whiskit";
+			};
+			name = Debug;
+		};
+		FDDA2DE32CAF8D0700DA7957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJ2H2N46FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whiskit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/whiskit";
+			};
+			name = Release;
+		};
+		FDDA2DE52CAF8D0700DA7957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJ2H2N46FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = whiskit;
+			};
+			name = Debug;
+		};
+		FDDA2DE62CAF8D0700DA7957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJ2H2N46FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = whiskit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDDA2DB42CAF8D0600DA7957 /* Build configuration list for PBXProject "whiskit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA2DDC2CAF8D0700DA7957 /* Debug */,
+				FDDA2DDD2CAF8D0700DA7957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDA2DDE2CAF8D0700DA7957 /* Build configuration list for PBXNativeTarget "whiskit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA2DDF2CAF8D0700DA7957 /* Debug */,
+				FDDA2DE02CAF8D0700DA7957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDA2DE12CAF8D0700DA7957 /* Build configuration list for PBXNativeTarget "whiskitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA2DE22CAF8D0700DA7957 /* Debug */,
+				FDDA2DE32CAF8D0700DA7957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDA2DE42CAF8D0700DA7957 /* Build configuration list for PBXNativeTarget "whiskitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDA2DE52CAF8D0700DA7957 /* Debug */,
+				FDDA2DE62CAF8D0700DA7957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDDA2DB12CAF8D0600DA7957 /* Project object */;
+}
