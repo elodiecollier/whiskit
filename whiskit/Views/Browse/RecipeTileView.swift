@@ -8,30 +8,36 @@
 import SwiftUI
 
 struct RecipeTileView: View {
-    let recipeName: String
-    let recipeImage: String
+    let recipe: RecipeDTO
     
     var body: some View {
         VStack {
-            Image(recipeImage)
-                .resizable()
-                .scaledToFill()
-                .frame(maxWidth: 100, maxHeight: 100)
-            Text(recipeName)
+            if (doesContentExist(field: recipe.image)) {
+                Image(recipe.image!)
+                    .resizable()
+                    .scaledToFill()
+                    .cornerRadius(20)
+                    .frame(maxWidth: 90, maxHeight: 90)
+                    .padding()
+            }
+            Text(recipe.name)
                 .padding()
         }
         .background(
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                 .fill(Color.gray.opacity(0.2))
-                .frame(width: 300, height: 300)
+                .frame(width: 150, height: 150)
         )
-        .frame(width: 300, height: 300)
+        .frame(width: 150, height: 150)
+    }
+    
+    func doesContentExist(field: String?) -> Bool {
+        return (field != nil && field != "")
     }
 }
 
 #Preview {
     RecipeTileView(
-        recipeName: "Food",
-        recipeImage: "logo"
+        recipe: RecipeDTO.garlicButterChickenTenders
     )
 }

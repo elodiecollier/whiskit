@@ -7,14 +7,17 @@
 
 import Foundation
 
-struct EquipmentDTO {
+struct EquipmentDTO: Identifiable {
+    var id: Int
     var name: String
     
     static let `skillet` = EquipmentDTO(
+        id: 1,
         name: "Skillet"
         )
     
     static let `tongs` = EquipmentDTO(
+        id: 2,
         name: "Tongs"
         )
 }

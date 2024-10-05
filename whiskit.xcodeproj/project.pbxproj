@@ -24,6 +24,7 @@
 		FDDA2E0B2CAFA4BD00DA7957 /* EquipmentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0A2CAFA4BD00DA7957 /* EquipmentDTO.swift */; };
 		FDDA2E0D2CAFA4DC00DA7957 /* IngredientDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */; };
 		FDDA2E0F2CB1D75400DA7957 /* TagDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */; };
+		FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FDDA2E0A2CAFA4BD00DA7957 /* EquipmentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDTO.swift; sourceTree = "<group>"; };
 		FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDTO.swift; sourceTree = "<group>"; };
 		FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDTO.swift; sourceTree = "<group>"; };
+		FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			children = (
 				FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */,
 				FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */,
+				FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				FDDA2E072CAFA37200DA7957 /* RecipeDTO.swift in Sources */,
 				FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */,
 				FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */,
+				FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */,
 				FDDA2E0B2CAFA4BD00DA7957 /* EquipmentDTO.swift in Sources */,
 				FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */,
 				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
