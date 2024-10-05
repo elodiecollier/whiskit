@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct IngredientDTO: Hashable, Codable, Identifiable {
-    var id: Int
+struct IngredientDTO {
     var name: String
-    var measurement: String
+    var measurement: String?
+    var extraNotes: String?
 }

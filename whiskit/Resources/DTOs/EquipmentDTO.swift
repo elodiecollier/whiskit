@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct EquipmentDTO: Hashable, Codable, Identifiable {
-    var id: Int
+struct EquipmentDTO {
     var name: String
+    
+    static let `skillet` = EquipmentDTO(
+        name: "Skillet"
+        )
+    
+    static let `tongs` = EquipmentDTO(
+        name: "Tongs"
+        )
 }
