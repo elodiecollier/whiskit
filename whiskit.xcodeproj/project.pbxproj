@@ -25,6 +25,8 @@
 		FDDA2E0D2CAFA4DC00DA7957 /* IngredientDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */; };
 		FDDA2E0F2CB1D75400DA7957 /* TagDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */; };
 		FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */; };
+		FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E172CB21DCD00DA7957 /* RecipeService.swift */; };
+		FDDA2E1A2CB21E0100DA7957 /* RecipeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E192CB21E0100DA7957 /* RecipeServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDTO.swift; sourceTree = "<group>"; };
 		FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDTO.swift; sourceTree = "<group>"; };
 		FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		FDDA2E172CB21DCD00DA7957 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeService.swift; path = whiskit/RecipeService.swift; sourceTree = SOURCE_ROOT; };
+		FDDA2E192CB21E0100DA7957 /* RecipeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		FDDA2DE82CAF8D3C00DA7957 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FDDA2E172CB21DCD00DA7957 /* RecipeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 		FDDA2DE92CAF8D4200DA7957 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FDDA2E192CB21E0100DA7957 /* RecipeServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -373,6 +379,8 @@
 				FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */,
 				FDDA2E0B2CAFA4BD00DA7957 /* EquipmentDTO.swift in Sources */,
 				FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */,
+				FDDA2E1A2CB21E0100DA7957 /* RecipeServiceProtocol.swift in Sources */,
+				FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */,
 				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
 				FDDA2DF62CAF8F6A00DA7957 /* CreateView.swift in Sources */,
 				FDDA2E092CAFA38800DA7957 /* RecipeStepDTO.swift in Sources */,

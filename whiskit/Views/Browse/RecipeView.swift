@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeView: View {
     @Binding var isRecipeOpen: Bool
     let recipe: RecipeDTO
+    let recipeService = RecipeService()
     
     var body: some View {
         ZStack {

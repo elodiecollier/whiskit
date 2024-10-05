@@ -9,35 +9,33 @@ import SwiftUI
 
 struct RecipeTileView: View {
     let recipe: RecipeDTO
+    let recipeService = RecipeService()
     
     var body: some View {
         VStack {
-            if (doesContentExist(field: recipe.image)) {
-                Image(recipe.image!)
-                    .resizable()
-                    .scaledToFill()
-                    .cornerRadius(20)
-                    .frame(maxWidth: 90, maxHeight: 90)
-                    .padding()
-            }
+            Image(recipeService.recipeImage(recipeImage: recipe.image))
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: 140, maxHeight: 80)
+                .cornerRadius(20)
+                .clipped()
+            Spacer()
             Text(recipe.name)
-                .padding()
+                .lineLimit(2)
         }
+        .padding()
         .background(
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                 .fill(Color.gray.opacity(0.2))
-                .frame(width: 150, height: 150)
+                .frame(width: 170, height: 170)
         )
-        .frame(width: 150, height: 150)
-    }
-    
-    func doesContentExist(field: String?) -> Bool {
-        return (field != nil && field != "")
+        .frame(width: 170, height: 170)
     }
 }
 
 #Preview {
     RecipeTileView(
-        recipe: RecipeDTO.garlicButterChickenTenders
+        recipe: RecipeDTO.default
     )
 }
+

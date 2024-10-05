@@ -81,8 +81,17 @@ struct RecipeDTO: Identifiable {
         isPublic: true
     )
     
+    static let `default` = RecipeDTO(
+        id: 2,
+        name: "Default",
+        ingredients: [],
+        equipment: [],
+        recipeSteps: [],
+        isPublic: true)
+    
     static let `offlineRecipes` = [
-        RecipeDTO.garlicButterChickenTenders
+        RecipeDTO.garlicButterChickenTenders,
+        RecipeDTO.default
     ]
 }
 
