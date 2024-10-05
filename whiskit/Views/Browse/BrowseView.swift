@@ -16,8 +16,10 @@ struct BrowseView: View {
     ]
     
     var body: some View {
+        VStack {
+            Text("Browse Recipes")
+                .padding()
         ScrollView {
-            VStack {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(RecipeDTO.offlineRecipes) { recipe in
                         Button(action: {
@@ -28,7 +30,6 @@ struct BrowseView: View {
                                 recipe: recipe
                             )
                         }
-                        .padding()
                     }
                 }
             }
