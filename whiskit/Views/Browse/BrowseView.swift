@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BrowseView: View {
     @State private var isRecipeOpen = false
-    @State private var selectedRecipe = RecipeDTO.garlicButterChickenTenders
+    @State private var selectedRecipe = RecipeDTO.default
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())

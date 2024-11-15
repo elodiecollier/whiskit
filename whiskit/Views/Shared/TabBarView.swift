@@ -12,15 +12,15 @@ struct TabBarView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "house.fill")
+                    Label("Home", systemImage: "carrot.fill")
                 }
             BrowseView()
                 .tabItem {
-                    Label("Browse", systemImage: "list.bullet.clipboard.fill")
+                    Label("Recipes", systemImage: "fork.knife")
                 }
             CreateView()
                 .tabItem {
-                    Label("Create", systemImage: "camera.fill")
+                    Label("Basics", systemImage: "frying.pan.fill")
                 }
         }
     }

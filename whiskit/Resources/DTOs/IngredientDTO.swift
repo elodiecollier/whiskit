@@ -9,7 +9,5 @@ import Foundation
 
 struct IngredientDTO: Identifiable {
     var id: Int
-    var name: String
-    var measurement: String?
-    var extraNotes: String?
+    var text: String
 }

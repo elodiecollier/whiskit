@@ -16,6 +16,45 @@ struct RecipeView: View {
         ZStack {
             VStack {
                 Text(recipe.name)
+                    .frame(maxWidth: 300)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                    .font(.title)
+                ScrollView {
+                    VStack {
+                        Image(recipeService.recipeImage(recipeImage: recipe.image))
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(20)
+                            .clipped()
+                        if (recipe.submittedBy != nil) {
+                            Text("Submitted by \(recipe.submittedBy!)")
+                                .font(.caption)
+                        }
+                    }
+                    .padding(.top)
+                    .padding()
+                    VStack {
+                        Text("Ingredients")
+                            .font(.title2)
+                        ForEach(recipe.ingredients) { ingredient in
+                            Text(ingredient.text)
+                        }
+                    }
+                    .padding()
+                    .background(Color(.green).opacity(0.3))
+                    .cornerRadius(20)
+                    VStack {
+                        ForEach(recipe.recipeSteps) { step in
+                            Text("\(step.stepNumber). \(step.text)")
+                                .padding()
+                        }
+                    }
+                    .padding()
+                    .background(Color(.yellow).opacity(0.3))
+                    .cornerRadius(20)
+                    .padding()
+                }
             }
             VStack {
                 HStack {

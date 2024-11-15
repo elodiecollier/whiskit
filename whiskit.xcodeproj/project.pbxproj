@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDCDAC652CE6FCA40071AD0E /* CookBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookBasicDTO.swift */; };
 		FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */; };
 		FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */; };
 		FDDA2DC12CAF8D0700DA7957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */; };
@@ -21,7 +22,6 @@
 		FDDA2DFA2CAF9B2100DA7957 /* RecipeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */; };
 		FDDA2E072CAFA37200DA7957 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */; };
 		FDDA2E092CAFA38800DA7957 /* RecipeStepDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */; };
-		FDDA2E0B2CAFA4BD00DA7957 /* EquipmentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0A2CAFA4BD00DA7957 /* EquipmentDTO.swift */; };
 		FDDA2E0D2CAFA4DC00DA7957 /* IngredientDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */; };
 		FDDA2E0F2CB1D75400DA7957 /* TagDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */; };
 		FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */; };
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDCDAC642CE6FCA40071AD0E /* CookBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBasicDTO.swift; sourceTree = "<group>"; };
 		FDDA2DB92CAF8D0600DA7957 /* whiskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitApp.swift; sourceTree = "<group>"; };
 		FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTileView.swift; sourceTree = "<group>"; };
 		FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
 		FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepDTO.swift; sourceTree = "<group>"; };
-		FDDA2E0A2CAFA4BD00DA7957 /* EquipmentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDTO.swift; sourceTree = "<group>"; };
 		FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientDTO.swift; sourceTree = "<group>"; };
 		FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDTO.swift; sourceTree = "<group>"; };
 		FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
@@ -231,11 +231,11 @@
 		FDDA2E052CAFA35E00DA7957 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				FDDA2E0A2CAFA4BD00DA7957 /* EquipmentDTO.swift */,
 				FDDA2E0C2CAFA4DC00DA7957 /* IngredientDTO.swift */,
 				FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */,
 				FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */,
 				FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */,
+				FDCDAC642CE6FCA40071AD0E /* CookBasicDTO.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -376,8 +376,8 @@
 				FDDA2E072CAFA37200DA7957 /* RecipeDTO.swift in Sources */,
 				FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */,
 				FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */,
+				FDCDAC652CE6FCA40071AD0E /* CookBasicDTO.swift in Sources */,
 				FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */,
-				FDDA2E0B2CAFA4BD00DA7957 /* EquipmentDTO.swift in Sources */,
 				FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */,
 				FDDA2E1A2CB21E0100DA7957 /* RecipeServiceProtocol.swift in Sources */,
 				FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */,
@@ -556,14 +556,14 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elodiecollier.whiskit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -594,14 +594,14 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.elodiecollier.whiskit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elodiecollier.whiskit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";

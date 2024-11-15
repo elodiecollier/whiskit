@@ -21,6 +21,7 @@ struct RecipeTileView: View {
                 .clipped()
             Spacer()
             Text(recipe.name)
+                .foregroundStyle(Color.black)
                 .lineLimit(2)
         }
         .padding()

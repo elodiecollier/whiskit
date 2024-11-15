@@ -13,8 +13,9 @@ struct RecipeDTO: Identifiable {
     var image: String?
     var link: String?
     var submittedBy: String?
+    var prepTime: String?
+    var cookTime: String?
     var ingredients: [IngredientDTO]
-    var equipment: [EquipmentDTO]
     var recipeSteps: [RecipeStepDTO]
     var tags: [TagDTO]?
     var notes: String?
@@ -28,52 +29,40 @@ struct RecipeDTO: Identifiable {
         ingredients: [
             IngredientDTO(
                 id: 1,
-                name: "Olive Oil",
-                measurement: "1 tablespoon"
+                text: "1 tablespoon olive oil"
             ),
             IngredientDTO(
                 id: 2,
-                name: "Butter",
-                measurement: "2 tablespoon",
-                extraNotes: "Divided"
+                text: "2 tablespoon butter"
             ),
             IngredientDTO(
                 id: 3,
-                name: "Paprika"
+                text: "2 teaspoons Paprika"
             ),
             IngredientDTO(
                 id: 4,
-                name: "Chicken Breast Tenders",
-                measurement: "1 pound"
+                text: "Chicken Breast Tenders"
             ),
             IngredientDTO(
                 id: 5,
-                name: "Salt"
+                text: "Salt"
             ),
             IngredientDTO(
                 id: 6,
-                name: "Pepper"
+                text: "Ground Black Pepper"
             ),
             IngredientDTO(
                 id: 7,
-                name: "Garlic",
-                measurement: "4 cloves",
-                extraNotes: "Crushed or Minced"
+                text: "4 cloves of Garlic"
             ),
             IngredientDTO(
                 id: 8,
-                name: "Italian Seasoning"
-            )
-        ],
-        equipment: [
-            EquipmentDTO(
-                id: 1,
-                name: "Skillet"
+                text: "1 teaspoon Italian Seasoning"
             ),
-        EquipmentDTO(
-            id: 2,
-            name: "Tongs"
-        )
+            IngredientDTO(
+                id: 9,
+                text: "Parsley (optional)"
+            )
         ],
         recipeSteps: RecipeStepDTO.garlicButterChickenTendersSteps,
         tags: [TagDTO.entree, TagDTO.poultry],
@@ -85,12 +74,34 @@ struct RecipeDTO: Identifiable {
         id: 2,
         name: "Default",
         ingredients: [],
-        equipment: [],
         recipeSteps: [],
         isPublic: true)
     
+    static let `pastaSalad` = RecipeDTO(
+        id: 3,
+        name: "Mediterranean Pasta Salad",
+        image: "pastaSalad",
+        ingredients: [
+            IngredientDTO(id: 11, text: "1 clove of Garlic"),
+            IngredientDTO(id: 12, text: "3 Medium Tomatoes on the Vine"),
+            IngredientDTO(id: 13, text: "1/2 cup of fresh Basil"),
+            IngredientDTO(id: 14, text: "3/4 cup of Olive Oil"),
+            IngredientDTO(id: 15, text: "1 box of Penne"),
+            IngredientDTO(id: 16, text: "1 tablespoon of Balsamic Vinegar"),
+            IngredientDTO(id: 17, text: "12 ounces of Feta Cheese"),
+        ],
+        recipeSteps: [
+            RecipeStepDTO(id: 11, stepNumber: 1, text: "Chop your tomatoes, garlic, basil and combine in a bowl with olive oil. Let stand for 1 hour."),
+            RecipeStepDTO(id: 12, stepNumber: 2, text: "Cook your pasta using package directions."),
+            RecipeStepDTO(id: 13, stepNumber: 3, text: "Stir the balsamic vingar into your tomato mixture."),
+            RecipeStepDTO(id: 14, stepNumber: 4, text: "Toss tomato mixture with pasta and feta cheese in large bowl. Serve cold!")
+        ],
+        isPublic: true
+    )
+    
     static let `offlineRecipes` = [
         RecipeDTO.garlicButterChickenTenders,
+        RecipeDTO.pastaSalad,
         RecipeDTO.default
     ]
 }

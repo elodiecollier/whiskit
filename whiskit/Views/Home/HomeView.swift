@@ -15,9 +15,6 @@ struct HomeView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200)
-                Button(action: {}) {
-                    Text("Upload a Meal")
-                }
                 .padding()
             }
         }
