@@ -18,7 +18,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Recipes", systemImage: "fork.knife")
                 }
-            CreateView()
+            BasicsView()
                 .tabItem {
                     Label("Basics", systemImage: "frying.pan.fill")
                 }

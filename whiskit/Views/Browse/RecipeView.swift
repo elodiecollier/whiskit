@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct RecipeView: View {
-    @Binding var isRecipeOpen: Bool
     let recipe: RecipeDTO
     let recipeService = RecipeService()
-    
+    var onClose: () -> Void
+
     var body: some View {
         ZStack {
             VStack {
@@ -27,8 +27,8 @@ struct RecipeView: View {
                             .aspectRatio(contentMode: .fit)
                             .cornerRadius(20)
                             .clipped()
-                        if (recipe.submittedBy != nil) {
-                            Text("Submitted by \(recipe.submittedBy!)")
+                        if let submittedBy = recipe.submittedBy {
+                            Text("Submitted by \(submittedBy)")
                                 .font(.caption)
                         }
                     }
@@ -59,7 +59,7 @@ struct RecipeView: View {
             VStack {
                 HStack {
                     Button(action: {
-                        isRecipeOpen = false
+                        onClose()
                     }) {
                         Image(systemName: "xmark.circle")
                     }
@@ -74,7 +74,7 @@ struct RecipeView: View {
 
 #Preview {
     RecipeView(
-        isRecipeOpen: .constant(true),
-        recipe: RecipeDTO.garlicButterChickenTenders
+        recipe: RecipeDTO.garlicButterChickenTenders,
+        onClose: {}
     )
 }

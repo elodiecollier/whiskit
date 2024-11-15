@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDCDAC652CE6FCA40071AD0E /* CookBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookBasicDTO.swift */; };
+		FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */; };
+		FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */; };
 		FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */; };
 		FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */; };
 		FDDA2DC12CAF8D0700DA7957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */; };
@@ -18,7 +19,7 @@
 		FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */; };
 		FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */; };
 		FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */; };
-		FDDA2DF62CAF8F6A00DA7957 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF52CAF8F6A00DA7957 /* CreateView.swift */; };
+		FDDA2DF62CAF8F6A00DA7957 /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF52CAF8F6A00DA7957 /* BasicsView.swift */; };
 		FDDA2DFA2CAF9B2100DA7957 /* RecipeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */; };
 		FDDA2E072CAFA37200DA7957 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */; };
 		FDDA2E092CAFA38800DA7957 /* RecipeStepDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */; };
@@ -47,7 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FDCDAC642CE6FCA40071AD0E /* CookBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBasicDTO.swift; sourceTree = "<group>"; };
+		FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingBasicDTO.swift; sourceTree = "<group>"; };
+		FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBasicView.swift; sourceTree = "<group>"; };
 		FDDA2DB92CAF8D0600DA7957 /* whiskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitApp.swift; sourceTree = "<group>"; };
 		FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
-		FDDA2DF52CAF8F6A00DA7957 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		FDDA2DF52CAF8F6A00DA7957 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
 		FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTileView.swift; sourceTree = "<group>"; };
 		FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
 		FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeStepDTO.swift; sourceTree = "<group>"; };
@@ -162,7 +164,7 @@
 		FDDA2DE72CAF8D3000DA7957 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FDDA2DF42CAF8F5B00DA7957 /* Create */,
+				FDDA2DF42CAF8F5B00DA7957 /* Basics */,
 				FDDA2DF32CAF8E6D00DA7957 /* Browse */,
 				FDDA2DEE2CAF8DEF00DA7957 /* Home */,
 				FDDA2DED2CAF8DE900DA7957 /* Shared */,
@@ -212,12 +214,13 @@
 			path = Browse;
 			sourceTree = "<group>";
 		};
-		FDDA2DF42CAF8F5B00DA7957 /* Create */ = {
+		FDDA2DF42CAF8F5B00DA7957 /* Basics */ = {
 			isa = PBXGroup;
 			children = (
-				FDDA2DF52CAF8F6A00DA7957 /* CreateView.swift */,
+				FDDA2DF52CAF8F6A00DA7957 /* BasicsView.swift */,
+				FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */,
 			);
-			path = Create;
+			path = Basics;
 			sourceTree = "<group>";
 		};
 		FDDA2E042CAFA34300DA7957 /* Resources */ = {
@@ -235,7 +238,7 @@
 				FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */,
 				FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */,
 				FDDA2E0E2CB1D75400DA7957 /* TagDTO.swift */,
-				FDCDAC642CE6FCA40071AD0E /* CookBasicDTO.swift */,
+				FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -376,13 +379,14 @@
 				FDDA2E072CAFA37200DA7957 /* RecipeDTO.swift in Sources */,
 				FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */,
 				FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */,
-				FDCDAC652CE6FCA40071AD0E /* CookBasicDTO.swift in Sources */,
+				FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */,
 				FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */,
+				FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */,
 				FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */,
 				FDDA2E1A2CB21E0100DA7957 /* RecipeServiceProtocol.swift in Sources */,
 				FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */,
 				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
-				FDDA2DF62CAF8F6A00DA7957 /* CreateView.swift in Sources */,
+				FDDA2DF62CAF8F6A00DA7957 /* BasicsView.swift in Sources */,
 				FDDA2E092CAFA38800DA7957 /* RecipeStepDTO.swift in Sources */,
 				FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */,
 			);

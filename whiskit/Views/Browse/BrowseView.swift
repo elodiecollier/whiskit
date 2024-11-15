@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct BrowseView: View {
-    @State private var isRecipeOpen = false
-    @State private var selectedRecipe = RecipeDTO.default
+    @State private var selectedRecipe: RecipeDTO? = nil
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -19,27 +18,28 @@ struct BrowseView: View {
         VStack {
             Text("Browse Recipes")
                 .padding()
-        ScrollView {
+            ScrollView {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(RecipeDTO.offlineRecipes) { recipe in
                         Button(action: {
-                            selectedRecipe = recipe
-                            isRecipeOpen = true
+                            openRecipe(tappedRecipe: recipe)
                         }) {
-                            RecipeTileView(
-                                recipe: recipe
-                            )
+                            RecipeTileView(recipe: recipe)
                         }
                     }
                 }
             }
         }
-        .fullScreenCover(isPresented: $isRecipeOpen, content: {
+        .fullScreenCover(item: $selectedRecipe) { recipe in
             RecipeView(
-                isRecipeOpen: $isRecipeOpen,
-                recipe: selectedRecipe
+                recipe: recipe,
+                onClose: { selectedRecipe = nil } 
             )
-        })
+        }
+    }
+    
+    func openRecipe(tappedRecipe: RecipeDTO) {
+        selectedRecipe = tappedRecipe
     }
 }
 
