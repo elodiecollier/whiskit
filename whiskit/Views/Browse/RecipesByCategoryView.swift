@@ -1,13 +1,13 @@
 //
-//  BrowseView.swift
+//  RecipesByCategoryView.swift
 //  whiskit
 //
-//  Created by Elodie Collier on 10/3/24.
+//  Created by Elodie Collier on 12/5/24.
 //
 
 import SwiftUI
 
-struct BrowseView: View {
+struct RecipesByCategoryView: View {
     @State private var selectedRecipe: RecipeDTO? = nil
     let columns = [
         GridItem(.flexible()),
@@ -15,10 +15,10 @@ struct BrowseView: View {
     ]
     
     var body: some View {
-        VStack {
             Text("Browse Recipes")
                 .padding()
             ScrollView {
+                VStack {
                 LazyVGrid(columns: columns, spacing: 16) {
                     ForEach(RecipeDTO.offlineRecipes) { recipe in
                         Button(action: {
@@ -33,7 +33,7 @@ struct BrowseView: View {
         .fullScreenCover(item: $selectedRecipe) { recipe in
             RecipeView(
                 recipe: recipe,
-                onClose: { selectedRecipe = nil } 
+                onClose: { selectedRecipe = nil }
             )
         }
     }
@@ -44,5 +44,5 @@ struct BrowseView: View {
 }
 
 #Preview {
-    BrowseView()
+    RecipesByCategoryView()
 }

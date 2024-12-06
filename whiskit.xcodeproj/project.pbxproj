@@ -10,6 +10,7 @@
 		FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */; };
 		FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */; };
 		FDCDAC6F2D022C110071AD0E /* CategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6E2D022C110071AD0E /* CategoryDTO.swift */; };
+		FDCDAC732D0294500071AD0E /* RecipesByCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC722D0294500071AD0E /* RecipesByCategoryView.swift */; };
 		FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */; };
 		FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */; };
 		FDDA2DC12CAF8D0700DA7957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDA2DC02CAF8D0700DA7957 /* Assets.xcassets */; };
@@ -19,7 +20,7 @@
 		FDDA2DDB2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */; };
 		FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */; };
 		FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */; };
-		FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */; };
+		FDDA2DF22CAF8E6600DA7957 /* RecipeCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF12CAF8E6600DA7957 /* RecipeCategoriesView.swift */; };
 		FDDA2DF62CAF8F6A00DA7957 /* BasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF52CAF8F6A00DA7957 /* BasicsView.swift */; };
 		FDDA2DFA2CAF9B2100DA7957 /* RecipeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */; };
 		FDDA2E072CAFA37200DA7957 /* RecipeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */; };
@@ -51,6 +52,7 @@
 		FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingBasicDTO.swift; sourceTree = "<group>"; };
 		FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBasicView.swift; sourceTree = "<group>"; };
 		FDCDAC6E2D022C110071AD0E /* CategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDTO.swift; sourceTree = "<group>"; };
+		FDCDAC722D0294500071AD0E /* RecipesByCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesByCategoryView.swift; sourceTree = "<group>"; };
 		FDDA2DB92CAF8D0600DA7957 /* whiskit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiskit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDA2DBC2CAF8D0600DA7957 /* whiskitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitApp.swift; sourceTree = "<group>"; };
 		FDDA2DBE2CAF8D0600DA7957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		FDDA2DDA2CAF8D0700DA7957 /* whiskitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiskitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FDDA2DEB2CAF8D7900DA7957 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FDDA2DEF2CAF8DFD00DA7957 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		FDDA2DF12CAF8E6600DA7957 /* RecipeCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoriesView.swift; sourceTree = "<group>"; };
 		FDDA2DF52CAF8F6A00DA7957 /* BasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsView.swift; sourceTree = "<group>"; };
 		FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTileView.swift; sourceTree = "<group>"; };
 		FDDA2E062CAFA37200DA7957 /* RecipeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDTO.swift; sourceTree = "<group>"; };
@@ -207,9 +209,10 @@
 		FDDA2DF32CAF8E6D00DA7957 /* Browse */ = {
 			isa = PBXGroup;
 			children = (
-				FDDA2DF12CAF8E6600DA7957 /* BrowseView.swift */,
+				FDDA2DF12CAF8E6600DA7957 /* RecipeCategoriesView.swift */,
 				FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */,
 				FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */,
+				FDCDAC722D0294500071AD0E /* RecipesByCategoryView.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -382,10 +385,11 @@
 				FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */,
 				FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */,
 				FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */,
-				FDDA2DF22CAF8E6600DA7957 /* BrowseView.swift in Sources */,
+				FDDA2DF22CAF8E6600DA7957 /* RecipeCategoriesView.swift in Sources */,
 				FDDA2E1A2CB21E0100DA7957 /* RecipeServiceProtocol.swift in Sources */,
 				FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */,
 				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
+				FDCDAC732D0294500071AD0E /* RecipesByCategoryView.swift in Sources */,
 				FDDA2DF62CAF8F6A00DA7957 /* BasicsView.swift in Sources */,
 				FDDA2E092CAFA38800DA7957 /* RecipeStepDTO.swift in Sources */,
 				FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */,

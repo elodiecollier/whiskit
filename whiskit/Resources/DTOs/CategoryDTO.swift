@@ -9,31 +9,39 @@ import Foundation
 
 struct CategoryDTO: Identifiable {
     var id: Int
-    var category: String
+    var categoryName: String
     
     static let `entree` = CategoryDTO(
         id: 1,
-        category: "Entree"
+        categoryName: "Entree"
     )
     
     static let `side` = CategoryDTO(
         id: 2,
-        category: "Side"
+        categoryName: "Side"
     )
     static let `appetizer` = CategoryDTO(
         id: 3,
-        category: "Appetizer"
+        categoryName: "Appetizer"
     )
     static let `dessert` = CategoryDTO(
         id: 4,
-        category: "Dessert"
+        categoryName: "Dessert"
     )
     static let `snack` = CategoryDTO(
         id: 5,
-        category: "Snack"
+        categoryName: "Snack"
     )
     static let `beverage` = CategoryDTO(
         id: 6,
-        category: "Beverage"
+        categoryName: "Beverage"
     )
+    
+    static let `categories` = [
+        CategoryDTO.appetizer,
+        CategoryDTO.entree,
+        CategoryDTO.dessert,
+        CategoryDTO.snack,
+        CategoryDTO.beverage
+    ]
 }

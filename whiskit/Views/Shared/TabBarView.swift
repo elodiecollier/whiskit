@@ -14,7 +14,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Home", systemImage: "carrot.fill")
                 }
-            BrowseView()
+            RecipeCategoriesView()
                 .tabItem {
                     Label("Recipes", systemImage: "fork.knife")
                 }
