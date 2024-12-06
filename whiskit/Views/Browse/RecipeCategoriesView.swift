@@ -18,25 +18,23 @@ struct RecipeCategoriesView: View {
                     VStack {
                         ForEach(CategoryDTO.categories) { category in
                             NavigationLink(
-                                destination: RecipesByCategoryView()
+                                destination: RecipesByCategoryView(filteredRecipes: filterRecipesByCategory(selectedCategory: category))
                             ) {
-                                Text(category.categoryName)
-                                    .foregroundStyle(Color("TextColor"))
-                                    .frame(maxWidth: .infinity)
-                                    .frame(height: 100)
-                                    .padding()
+                                Image(category.buttonImage)
+                                    .resizable()
+                                    
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.horizontal)
                             }
-                            .background {
-                                RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                                    .fill(Color.cyan)
-                            }
-                            .padding(.horizontal)
-                            .padding(.bottom)
                         }
                     }
                 }
             }
         }
+    }
+    
+    func filterRecipesByCategory(selectedCategory: CategoryDTO) -> [RecipeDTO] {
+        return RecipeDTO.offlineRecipes.filter { $0.category.id == selectedCategory.id }
     }
 }
 

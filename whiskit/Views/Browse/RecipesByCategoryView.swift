@@ -13,21 +13,25 @@ struct RecipesByCategoryView: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+    let filteredRecipes: [RecipeDTO]
     
     var body: some View {
-            Text("Browse Recipes")
-                .padding()
             ScrollView {
                 VStack {
-                LazyVGrid(columns: columns, spacing: 16) {
-                    ForEach(RecipeDTO.offlineRecipes) { recipe in
-                        Button(action: {
-                            openRecipe(tappedRecipe: recipe)
-                        }) {
-                            RecipeTileView(recipe: recipe)
+                    if (filteredRecipes.isEmpty) {
+                        Text("No recipes to show!")
+                    }
+                    else {
+                        LazyVGrid(columns: columns, spacing: 16) {
+                            ForEach(filteredRecipes) { recipe in
+                                Button(action: {
+                                    openRecipe(tappedRecipe: recipe)
+                                }) {
+                                    RecipeTileView(recipe: recipe)
+                                }
+                            }
                         }
                     }
-                }
             }
         }
         .fullScreenCover(item: $selectedRecipe) { recipe in
@@ -44,5 +48,7 @@ struct RecipesByCategoryView: View {
 }
 
 #Preview {
-    RecipesByCategoryView()
+    RecipesByCategoryView(
+        filteredRecipes: RecipeDTO.offlineRecipes
+    )
 }

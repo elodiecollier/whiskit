@@ -7,34 +7,45 @@
 
 import Foundation
 
-struct CategoryDTO: Identifiable {
+struct CategoryDTO: Identifiable, Equatable {
     var id: Int
     var categoryName: String
+    var buttonImage: String
     
     static let `entree` = CategoryDTO(
         id: 1,
-        categoryName: "Entree"
+        categoryName: "Entrees",
+        buttonImage: "entrees"
     )
     
     static let `side` = CategoryDTO(
         id: 2,
-        categoryName: "Side"
+        categoryName: "Sides",
+        buttonImage: "sides"
     )
+    
     static let `appetizer` = CategoryDTO(
         id: 3,
-        categoryName: "Appetizer"
+        categoryName: "Appetizers",
+        buttonImage: "appetizers"
     )
+    
     static let `dessert` = CategoryDTO(
         id: 4,
-        categoryName: "Dessert"
+        categoryName: "Desserts",
+        buttonImage: "desserts"
     )
+    
     static let `snack` = CategoryDTO(
         id: 5,
-        categoryName: "Snack"
+        categoryName: "Snacks",
+        buttonImage: "snacks"
     )
+    
     static let `beverage` = CategoryDTO(
         id: 6,
-        categoryName: "Beverage"
+        categoryName: "Beverages",
+        buttonImage: "beverages"
     )
     
     static let `categories` = [
