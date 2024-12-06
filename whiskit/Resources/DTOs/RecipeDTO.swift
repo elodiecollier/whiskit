@@ -155,11 +155,40 @@ struct RecipeDTO: Identifiable {
         category: CategoryDTO.dessert
     )
     
+    static let `mapleBalsamicRoastedBrusselSprouts` = RecipeDTO(
+        id: 7,
+        name: "Maple Balsamic Roasted Brussel Sprouts",
+        image: "mapleBalsamicRoastedBrusselSprouts",
+        ingredients: [
+            IngredientDTO(id: 4201, text: "1 pound brussel sprouts"),
+            IngredientDTO(id: 4202, text: "2 tablespoons olive oil"),
+            IngredientDTO(id: 4203, text: "1 teaspoon salt"),
+            IngredientDTO(id: 4204, text: "1/2 teaspoon black pepper"),
+            IngredientDTO(id: 4205, text: "2 tablespoons dried cranberries"),
+            IngredientDTO(id: 4206, text: "2 tablespoons goat cheese, crumbled"),
+            IngredientDTO(id: 4207, text: "Pecans"),
+            IngredientDTO(id: 4208, text: "1/4 cup maple syrup"),
+            IngredientDTO(id: 4209, text: "1 & 1/2 tablespoons balsamic vinegar"),
+            IngredientDTO(id: 4210, text: "2 tablespoons dijon mustard"),
+            ],
+        recipeSteps: [
+            RecipeStepDTO(id: 41011, stepNumber: 1, text: "Preheat over to 425 degrees."),
+            RecipeStepDTO(id: 41012, stepNumber: 2, text: "Cut the brussel sprouts into halves and add them to a large bowl."),
+            RecipeStepDTO(id: 41013, stepNumber: 3, text: "Toss the sprouts with olive oil, salt, and black pepper."),
+            RecipeStepDTO(id: 41014, stepNumber: 4, text: "Spread the brussel sprouts on a baking pan, arranging them cut side down. Roast in the oven for 20-25 minutes, or until the edges of the brussel sprouts show hints of brown."),
+            RecipeStepDTO(id: 41015, stepNumber: 5, text: "While the brussel sprouts roast, whisk the maple syrup, balsamic vinegar, and dijon mustard together."),
+            RecipeStepDTO(id: 41016, stepNumber: 6, text: "Once the brussel sprouts are done, add them to a bowl with dried cranbarries and goat cheese. Drizzle the glaze over the top and toss until coated to your liking."),
+            RecipeStepDTO(id: 41017, stepNumber: 7, text: "Serve with chopped pecans sprinkled over top."),
+        ],
+        category: CategoryDTO.side
+    )
+    
     static let `offlineRecipes` = [
         RecipeDTO.garlicButterChickenTenders,
         RecipeDTO.pastaSalad,
         RecipeDTO.icedVanillaChai,
-        RecipeDTO.frenchApplePie
+        RecipeDTO.frenchApplePie,
+        RecipeDTO.mapleBalsamicRoastedBrusselSprouts
     ]
 }
 

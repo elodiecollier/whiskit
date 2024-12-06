@@ -51,6 +51,7 @@ struct CategoryDTO: Identifiable, Equatable {
     static let `categories` = [
         CategoryDTO.appetizer,
         CategoryDTO.entree,
+        CategoryDTO.side,
         CategoryDTO.dessert,
         CategoryDTO.snack,
         CategoryDTO.beverage
