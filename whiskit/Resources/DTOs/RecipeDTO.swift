@@ -11,14 +11,12 @@ struct RecipeDTO: Identifiable {
     var id: Int
     var name: String
     var image: String?
-    var link: String?
     var submittedBy: String?
-    var prepTime: String?
-    var cookTime: String?
     var ingredients: [IngredientDTO]
     var recipeSteps: [RecipeStepDTO]
     var category: CategoryDTO
-    var notes: String?
+    var helpfulRecipes: [RecipeDTO]?
+    var helpfulBasics: [CookingBasicDTO]?
     
     static let `garlicButterChickenTenders` = RecipeDTO(
         id: 1,
@@ -64,8 +62,7 @@ struct RecipeDTO: Identifiable {
             )
         ],
         recipeSteps: RecipeStepDTO.garlicButterChickenTendersSteps,
-        category: CategoryDTO.entree,
-        notes: "You can garnish with parsley for a pop of color!"
+        category: CategoryDTO.entree
     )
     
     static let `default` = RecipeDTO(
@@ -115,13 +112,54 @@ struct RecipeDTO: Identifiable {
             RecipeStepDTO(id: 1102, stepNumber: 2, text: "In a separte cup, add ice and chai concentrate. Pour frothed mixture on top."),
             RecipeStepDTO(id: 1103, stepNumber: 3, text: "Sprinkle cinnamon on top for aesthetic."),
         ],
-        category: CategoryDTO.beverage
+        category: CategoryDTO.beverage,
+        helpfulBasics: [CookingBasicDTO.makeChaiConcentrateEasy]
+    )
+    
+    static let `frenchApplePie` = RecipeDTO(
+        id: 5,
+        name: "French Apple Pie",
+        image: "frenchApplePie",
+        ingredients: [
+            IngredientDTO(id: 3101, text: "1-2 apples, Granny Smith or your choice"),
+            IngredientDTO(id: 3102, text: "2 large eggs"),
+            IngredientDTO(id: 3103, text: "1/2 cup sugar"),
+            IngredientDTO(id: 3104, text: "6 tablespoons butter melted"),
+            IngredientDTO(id: 3105, text: "1 teaspoon vanilla extract"),
+        ],
+        recipeSteps: [
+            RecipeStepDTO(id: 3101, stepNumber: 1, text: "Thinly slice your apples. Layer all around the pie crust in the shape of a flower."),
+            RecipeStepDTO(id: 3102, stepNumber: 2, text: "Mix all other ingredients and pour over apples evenly."),
+            RecipeStepDTO(id: 3103, stepNumber: 2, text: "Bake at 350F for 45 minutes or until set and browned."),
+            
+        ],
+        category: CategoryDTO.dessert,
+        helpfulRecipes: [RecipeDTO.frenchApplePieCrust]
+    )
+    
+    static let `frenchApplePieCrust` = RecipeDTO(
+        id: 6,
+        name: "French Apple Pie Crust",
+        ingredients: [
+            IngredientDTO(id: 201, text: "1 cup all-purpose flour or gluten-free 1:1 baking flour"),
+            IngredientDTO(id: 202, text: "1/2 cup butter room temperature, cut into cubes"),
+            IngredientDTO(id: 203, text: "1/2 cup of sugar"),
+            IngredientDTO(id: 204, text: "1 large egg"),
+            IngredientDTO(id: 205, text: "pinch of salt"),
+            ],
+        recipeSteps: [
+            RecipeStepDTO(id: 2101, stepNumber: 1, text: "Mix all the dry ingredients in a bowl."),
+            RecipeStepDTO(id: 2102, stepNumber: 2, text: "Add the cubes of butter and egg, and use a fork to cut it into the flour mixture."),
+            RecipeStepDTO(id: 2103, stepNumber: 3, text: "Put it into a pie dish and spread it out with your hands so that it is smooth and even."),
+        ],
+        category: CategoryDTO.dessert
     )
     
     static let `offlineRecipes` = [
         RecipeDTO.garlicButterChickenTenders,
         RecipeDTO.pastaSalad,
-        RecipeDTO.icedVanillaChai
+        RecipeDTO.icedVanillaChai,
+        RecipeDTO.frenchApplePie
     ]
 }
 

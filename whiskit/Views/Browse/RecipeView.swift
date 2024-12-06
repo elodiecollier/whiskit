@@ -35,16 +35,41 @@ struct RecipeView: View {
                     .padding(.top)
                     .padding()
                     VStack {
-                        Text("Ingredients")
+                        if (recipe.helpfulRecipes != nil) {
+                            ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
+                                Text("\(helpfulRecipe.name) Ingredients")
+                                    .font(.title2)
+                                ForEach(helpfulRecipe.ingredients) { ingredient in
+                                    Text(ingredient.text)
+                                        .multilineTextAlignment(.center)
+                                }
+                            }
+                            .padding(.bottom)
+                        }
+                        Text("\(recipe.name) Ingredients")
                             .font(.title2)
                         ForEach(recipe.ingredients) { ingredient in
                             Text(ingredient.text)
+                                .multilineTextAlignment(.center)
                         }
                     }
                     .padding()
                     .background(Color(.green).opacity(0.3))
                     .cornerRadius(20)
                     VStack {
+                        if (recipe.helpfulRecipes != nil) {
+                            ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
+                                Text("\(helpfulRecipe.name) Steps")
+                                    .font(.title2)
+                                ForEach(helpfulRecipe.recipeSteps) { step in
+                                    Text("\(step.stepNumber). \(step.text)")
+                                        .padding()
+                                }
+                            }
+                            .padding(.bottom)
+                        }
+                        Text("\(recipe.name) Steps")
+                            .font(.title2)
                         ForEach(recipe.recipeSteps) { step in
                             Text("\(step.stepNumber). \(step.text)")
                                 .padding()
