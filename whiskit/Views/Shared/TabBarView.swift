@@ -12,7 +12,7 @@ struct TabBarView: View {
         TabView {
             HomeView()
                 .tabItem {
-                    Label("Home", systemImage: "carrot.fill")
+                    Label("Home", systemImage: "house.fill")
                 }
             RecipeCategoriesView()
                 .tabItem {
@@ -21,6 +21,10 @@ struct TabBarView: View {
             BasicsView()
                 .tabItem {
                     Label("Basics", systemImage: "frying.pan.fill")
+                }
+            GroceryListView()
+                .tabItem{
+                    Label("Groceries", systemImage: "carrot.fill")
                 }
         }
     }

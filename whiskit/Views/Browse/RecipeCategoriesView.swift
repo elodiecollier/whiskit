@@ -12,8 +12,6 @@ struct RecipeCategoriesView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Browse Recipes")
-                    .padding()
                 ScrollView {
                     VStack {
                         ForEach(CategoryDTO.categories) { category in
@@ -22,7 +20,6 @@ struct RecipeCategoriesView: View {
                             ) {
                                 Image(category.buttonImage)
                                     .resizable()
-                                    
                                     .aspectRatio(contentMode: .fit)
                                     .padding(.horizontal)
                             }

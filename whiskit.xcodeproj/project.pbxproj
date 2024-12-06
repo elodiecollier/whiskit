@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD9E64C12D02A4EF00DA10FF /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */; };
 		FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */; };
 		FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */; };
 		FDCDAC6F2D022C110071AD0E /* CategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6E2D022C110071AD0E /* CategoryDTO.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingBasicDTO.swift; sourceTree = "<group>"; };
 		FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBasicView.swift; sourceTree = "<group>"; };
 		FDCDAC6E2D022C110071AD0E /* CategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDTO.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD9E64BF2D02A4DB00DA10FF /* GroceryList */ = {
+			isa = PBXGroup;
+			children = (
+				FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */,
+			);
+			path = GroceryList;
+			sourceTree = "<group>";
+		};
 		FDDA2DB02CAF8D0600DA7957 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		FDDA2DE72CAF8D3000DA7957 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FD9E64BF2D02A4DB00DA10FF /* GroceryList */,
 				FDDA2DF42CAF8F5B00DA7957 /* Basics */,
 				FDDA2DF32CAF8E6D00DA7957 /* Browse */,
 				FDDA2DEE2CAF8DEF00DA7957 /* Home */,
@@ -390,6 +401,7 @@
 				FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */,
 				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
 				FDCDAC732D0294500071AD0E /* RecipesByCategoryView.swift in Sources */,
+				FD9E64C12D02A4EF00DA10FF /* GroceryListView.swift in Sources */,
 				FDDA2DF62CAF8F6A00DA7957 /* BasicsView.swift in Sources */,
 				FDDA2E092CAFA38800DA7957 /* RecipeStepDTO.swift in Sources */,
 				FDDA2DBD2CAF8D0600DA7957 /* whiskitApp.swift in Sources */,
