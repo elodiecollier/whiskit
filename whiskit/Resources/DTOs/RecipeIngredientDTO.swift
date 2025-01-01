@@ -10,7 +10,7 @@ import Foundation
 struct RecipeIngredientDTO: Identifiable {
     var id: Int
     var unitOfMeasurement: UnitsOfMeasurementDTO
-    var value: Decimal
+    var measurementValue: Decimal
     var ingredient: IngredientDTO
     var note: String?
 }

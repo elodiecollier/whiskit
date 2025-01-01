@@ -27,57 +27,57 @@ struct RecipeDTO: Identifiable {
             RecipeIngredientDTO(
                 id: 1,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.oliveOil
             ),
             RecipeIngredientDTO(
                 id: 2,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.butter,
                 note: "divided"
             ),
             RecipeIngredientDTO(
                 id: 3,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.paprika
             ),
             RecipeIngredientDTO(
                 id: 4,
                 unitOfMeasurement: UnitsOfMeasurementDTO.pounds,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.chickenBreastTenders
             ),
             RecipeIngredientDTO(
                 id: 5,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.salt
             ),
             RecipeIngredientDTO(
                 id: 6,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 0.25,
+                measurementValue: 0.25,
                 ingredient: IngredientDTO.blackPepper
             ),
             RecipeIngredientDTO(
                 id: 7,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 4,
+                measurementValue: 4,
                 ingredient: IngredientDTO.garlicCloves,
                 note: "minced or crushed"
             ),
             RecipeIngredientDTO(
                 id: 8,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.italianSeasoning
             ),
             RecipeIngredientDTO(
                 id: 9,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.parsley,
                 note: "chopped"
             )
@@ -102,43 +102,43 @@ struct RecipeDTO: Identifiable {
             RecipeIngredientDTO(
                 id: 11,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.garlicCloves
             ),
             RecipeIngredientDTO(
                 id: 12,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 3,
+                measurementValue: 3,
                 ingredient: IngredientDTO.tomatoesOnTheVine
             ),
             RecipeIngredientDTO(
                 id: 13,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.freshBasil
             ),
             RecipeIngredientDTO(
                 id: 14,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.75,
+                measurementValue: 0.75,
                 ingredient: IngredientDTO.oliveOil
             ),
             RecipeIngredientDTO(
                 id: 15,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.penne
             ),
             RecipeIngredientDTO(
                 id: 16,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.balsamicVinegar
             ),
             RecipeIngredientDTO(
                 id: 17,
                 unitOfMeasurement: UnitsOfMeasurementDTO.ounces,
-                value: 12,
+                measurementValue: 12,
                 ingredient: IngredientDTO.fetaCheese
             )
         ],
@@ -159,38 +159,38 @@ struct RecipeDTO: Identifiable {
             RecipeIngredientDTO(
                 id: 101,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 3,
+                measurementValue: 3,
                 ingredient: IngredientDTO.heavyWhippingCream
             ),
             RecipeIngredientDTO(
                 id: 102,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.milk
             ),
             RecipeIngredientDTO(
                 id: 103,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.vanillaCoffeeSyrup
             ),
             RecipeIngredientDTO(
                 id: 104,
                 unitOfMeasurement: UnitsOfMeasurementDTO.sprinkle,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.paprika,
                 note: "ground cinnamon"
             ),
             RecipeIngredientDTO(
                 id: 105,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.chaiConcentrate
             ),
             RecipeIngredientDTO(
                 id: 106,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.salt,
                 note: "ice"
             )
@@ -212,32 +212,32 @@ struct RecipeDTO: Identifiable {
             RecipeIngredientDTO(
                 id: 3101,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 1.5,
+                measurementValue: 1.5,
                 ingredient: IngredientDTO.grannySmithApples
             ),
             RecipeIngredientDTO(
                 id: 3102,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.egg
             ),
             RecipeIngredientDTO(
                 id: 3103,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.sugar
             ),
             RecipeIngredientDTO(
                 id: 3104,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 6,
+                measurementValue: 6,
                 ingredient: IngredientDTO.butter,
                 note: "melted"
             ),
             RecipeIngredientDTO(
                 id: 3105,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.vanillaExtract
             )
         ],
@@ -257,32 +257,32 @@ struct RecipeDTO: Identifiable {
             RecipeIngredientDTO(
                 id: 201,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.allPurposeFlour
             ),
             RecipeIngredientDTO(
                 id: 202,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.butter,
                 note: "room temperature, cut into cubes"
             ),
             RecipeIngredientDTO(
                 id: 203,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.sugar
             ),
             RecipeIngredientDTO(
                 id: 204,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.egg
             ),
             RecipeIngredientDTO(
                 id: 205,
                 unitOfMeasurement: UnitsOfMeasurementDTO.pinch,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.salt
             )
         ],
@@ -302,63 +302,63 @@ struct RecipeDTO: Identifiable {
             RecipeIngredientDTO(
                 id: 4201,
                 unitOfMeasurement: UnitsOfMeasurementDTO.pounds,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.brusselSprouts
             ),
             RecipeIngredientDTO(
                 id: 4202,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.oliveOil
             ),
             RecipeIngredientDTO(
                 id: 4203,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.salt
             ),
             RecipeIngredientDTO(
                 id: 4204,
                 unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
-                value: 0.5,
+                measurementValue: 0.5,
                 ingredient: IngredientDTO.blackPepper
             ),
             RecipeIngredientDTO(
                 id: 4205,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.driedCranberries
             ),
             RecipeIngredientDTO(
                 id: 4206,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.goatCheese,
                 note: "crumbled"
             ),
             RecipeIngredientDTO(
                 id: 4207,
                 unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                value: 1,
+                measurementValue: 1,
                 ingredient: IngredientDTO.pecans,
                 note: "chopped"
             ),
             RecipeIngredientDTO(
                 id: 4208,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
-                value: 0.25,
+                measurementValue: 0.25,
                 ingredient: IngredientDTO.mapleSyrup
             ),
             RecipeIngredientDTO(
                 id: 4209,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 1.5,
+                measurementValue: 1.5,
                 ingredient: IngredientDTO.balsamicVinegar
             ),
             RecipeIngredientDTO(
                 id: 4210,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
-                value: 2,
+                measurementValue: 2,
                 ingredient: IngredientDTO.dijonMustard
             )
         ],
