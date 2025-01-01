@@ -35,23 +35,23 @@ struct RecipeView: View {
                     .padding(.top)
                     .padding()
                     VStack {
-                        if (recipe.helpfulRecipes != nil) {
-                            ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
-                                Text("\(helpfulRecipe.name) Ingredients")
-                                    .font(.title2)
-                                ForEach(helpfulRecipe.ingredients) { ingredient in
-                                    Text(ingredient.text)
-                                        .multilineTextAlignment(.center)
-                                }
-                            }
-                            .padding(.bottom)
-                        }
-                        Text("\(recipe.name) Ingredients")
-                            .font(.title2)
-                        ForEach(recipe.ingredients) { ingredient in
-                            Text(ingredient.text)
-                                .multilineTextAlignment(.center)
-                        }
+//                        if (recipe.helpfulRecipes != nil) {
+//                            ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
+//                                Text("\(helpfulRecipe.name) Ingredients")
+//                                    .font(.title2)
+//                                ForEach(helpfulRecipe.ingredients) { ingredient in
+//                                    Text(ingredient.text)
+//                                        .multilineTextAlignment(.center)
+//                                }
+//                            }
+//                            .padding(.bottom)
+//                        }
+//                        Text("\(recipe.name) Ingredients")
+//                            .font(.title2)
+//                        ForEach(recipe.ingredients) { ingredient in
+//                            Text(ingredient.text)
+//                                .multilineTextAlignment(.center)
+//                        }
                     }
                     .padding()
                     .background(Color(.green).opacity(0.3))
