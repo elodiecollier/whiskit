@@ -10,12 +10,18 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack {
-            VStack {
+            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+            ZStack {
+                Image("croissant")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300)
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200)
-                .padding()
+                    .frame(width: 350)
+                    .offset(y: -100)
+                    .padding()
             }
         }
     }

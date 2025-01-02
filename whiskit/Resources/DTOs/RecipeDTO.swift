@@ -576,6 +576,103 @@ struct RecipeDTO: Identifiable {
         category: CategoryDTO.entree
     )
     
+    static let `chickenGnocchiSoup` = RecipeDTO(
+        id: 10,
+        name: "Chicken Gnocchi Soup",
+        image: "chickenGnocchiSoup",
+        ingredients: [
+            RecipeIngredientDTO(
+                id: 1001,
+                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
+                measurementValue: 3,
+                ingredient: IngredientDTO.bonelessChickenBreast,
+                note: "cooked and diced"
+            ),
+            RecipeIngredientDTO(
+                id: 1002,
+                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
+                measurementValue: 1,
+                ingredient: IngredientDTO.celery,
+                note: "chopped"
+            ),
+            RecipeIngredientDTO(
+                id: 1003,
+                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
+                measurementValue: 0.5,
+                ingredient: IngredientDTO.whiteOnion,
+                note: "diced"
+            ),
+            RecipeIngredientDTO(
+                id: 1004,
+                unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.garlicCloves,
+                note: "minced"
+            ),
+            RecipeIngredientDTO(
+                id: 1005,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 0.5,
+                ingredient: IngredientDTO.shreddedCarrots
+            ),
+            RecipeIngredientDTO(
+                id: 1006,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 1,
+                ingredient: IngredientDTO.oliveOil
+            ),
+            RecipeIngredientDTO(
+                id: 1007,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 4,
+                ingredient: IngredientDTO.chickenBroth
+            ),
+            RecipeIngredientDTO(
+                id: 1008,
+                unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
+                measurementValue: 1,
+                ingredient: IngredientDTO.thyme
+            ),
+            RecipeIngredientDTO(
+                id: 1009,
+                unitOfMeasurement: UnitsOfMeasurementDTO.ounces,
+                measurementValue: 16,
+                ingredient: IngredientDTO.potatoGnocchi
+            ),
+            RecipeIngredientDTO(
+                id: 1010,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 2,
+                ingredient: IngredientDTO.halfAndHalf
+            ),
+            RecipeIngredientDTO(
+                id: 1011,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 1,
+                ingredient: IngredientDTO.freshSpinach,
+                note: "roughly chopped"
+            )
+        ],
+        recipeSteps: [
+            RecipeStepDTO(
+                id: 101,
+                stepNumber: 1,
+                text: "Heat olive oil in a large pot over medium heat. Add celery, onions, garlic, and carrots and saute for 2-3 minutes until onions are translucent."
+            ),
+            RecipeStepDTO(
+                id: 102,
+                stepNumber: 2,
+                text: "Add chicken, chicken broth, salt, pepper, and thyme, bring to a boil, then gently stir in gnocchi. Boil for 3-4 minutes longer before reducing heat to a simmer and cooking for 10 minutes."
+            ),
+            RecipeStepDTO(
+                id: 103,
+                stepNumber: 3,
+                text: "Stir in half and half and spinach and cook another 1-2 minutes until spinach is tender. Taste, add salt and pepper if needed, and serve."
+            )
+        ],
+        category: CategoryDTO.entree
+    )
+    
     static let `offlineRecipes` = [
         RecipeDTO.garlicButterChickenTenders,
         RecipeDTO.pastaSalad,
@@ -583,7 +680,8 @@ struct RecipeDTO: Identifiable {
         RecipeDTO.frenchApplePie,
         RecipeDTO.mapleBalsamicRoastedBrusselSprouts,
         RecipeDTO.bananaFoster,
-        RecipeDTO.lemonButterSalmon
+        RecipeDTO.lemonButterSalmon,
+        RecipeDTO.chickenGnocchiSoup
     ]
 }
 

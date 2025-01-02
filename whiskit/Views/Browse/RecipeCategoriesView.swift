@@ -11,17 +11,20 @@ struct RecipeCategoriesView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                ScrollView {
-                    VStack {
-                        ForEach(CategoryDTO.categories) { category in
-                            NavigationLink(
-                                destination: RecipesByCategoryView(filteredRecipes: filterRecipesByCategory(selectedCategory: category))
-                            ) {
-                                Image(category.buttonImage)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.horizontal)
+            ZStack {
+                Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+                VStack {
+                    ScrollView {
+                        VStack {
+                            ForEach(CategoryDTO.categories) { category in
+                                NavigationLink(
+                                    destination: RecipesByCategoryView(filteredRecipes: filterRecipesByCategory(selectedCategory: category))
+                                ) {
+                                    Image(category.buttonImage)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .padding(.horizontal)
+                                }
                             }
                         }
                     }

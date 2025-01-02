@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            VStack {
-                HomeView()
-            }
-            VStack {
-                Spacer()
-                TabBarView()
+            ZStack {
+                VStack {
+                    HomeView()
+                }
+                VStack {
+                    Spacer()
+                    TabBarView()
+                }
             }
         }
     }

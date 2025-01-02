@@ -12,26 +12,29 @@ struct BasicsView: View {
     @State var selectedBasic: CookingBasicDTO? = nil
     
     var body: some View {
-        VStack {
-            Text("How To:")
-                .font(.title)
-                .padding()
-            ScrollView {
-                ForEach(offlineBasics) { basic in
-                    Button(action: {
-                        openBasic(tappedBasic: basic)
-                    }) {
-                        Text(basic.title)
+        ZStack {
+            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("How To:")
+                    .font(.title)
+                    .padding()
+                ScrollView {
+                    ForEach(offlineBasics) { basic in
+                        Button(action: {
+                            openBasic(tappedBasic: basic)
+                        }) {
+                            Text(basic.title)
+                        }
                     }
+                    .padding()
                 }
-                .padding()
             }
-        }
-        .fullScreenCover(item: $selectedBasic) { basic in
-            SelectedBasicView(
-                basic: basic,
-                onClose: { selectedBasic = nil }
-            )
+            .fullScreenCover(item: $selectedBasic) { basic in
+                SelectedBasicView(
+                    basic: basic,
+                    onClose: { selectedBasic = nil }
+                )
+            }
         }
     }
     

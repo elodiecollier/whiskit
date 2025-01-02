@@ -9,7 +9,10 @@ import SwiftUI
 
 struct GroceryListView: View {
     var body: some View {
-        Text("I'm under constuction!")
+        ZStack {
+            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+            Text("I'm under constuction!")
+        }
     }
 }
 

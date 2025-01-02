@@ -14,6 +14,7 @@ struct RecipeView: View {
     
     var body: some View {
         ZStack {
+            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
             VStack {
                 Text(recipe.name)
                     .frame(maxWidth: 300)

@@ -16,6 +16,8 @@ struct RecipesByCategoryView: View {
     let filteredRecipes: [RecipeDTO]
     
     var body: some View {
+        ZStack {
+            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
             ScrollView {
                 VStack {
                     if (filteredRecipes.isEmpty) {
@@ -32,13 +34,14 @@ struct RecipesByCategoryView: View {
                             }
                         }
                     }
+                }
             }
-        }
-        .fullScreenCover(item: $selectedRecipe) { recipe in
-            RecipeView(
-                recipe: recipe,
-                onClose: { selectedRecipe = nil }
-            )
+            .fullScreenCover(item: $selectedRecipe) { recipe in
+                RecipeView(
+                    recipe: recipe,
+                    onClose: { selectedRecipe = nil }
+                )
+            }
         }
     }
     
