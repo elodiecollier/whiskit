@@ -125,8 +125,8 @@ struct RecipeDTO: Identifiable {
             ),
             RecipeIngredientDTO(
                 id: 15,
-                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
-                measurementValue: 1,
+                unitOfMeasurement: UnitsOfMeasurementDTO.ounces,
+                measurementValue: 16,
                 ingredient: IngredientDTO.penne
             ),
             RecipeIngredientDTO(
@@ -178,8 +178,7 @@ struct RecipeDTO: Identifiable {
                 id: 104,
                 unitOfMeasurement: UnitsOfMeasurementDTO.sprinkle,
                 measurementValue: 1,
-                ingredient: IngredientDTO.paprika,
-                note: "ground cinnamon"
+                ingredient: IngredientDTO.cinnamon
             ),
             RecipeIngredientDTO(
                 id: 105,
