@@ -40,7 +40,7 @@ struct RecipeView: View {
                                 Text("\(helpfulRecipe.name) Ingredients")
                                     .font(.title2)
                                 ForEach(helpfulRecipe.ingredients) { ingredient in
-                                    Text("\(String(describing: ingredient.measurementValue)) \(ingredient.unitOfMeasurement.measurementType) \(ingredient.ingredient.ingredientName)\(ingredient.note != nil ? ", \(ingredient.note!)" : "")")
+                                    Text(formattedIngredientText(ingredient: ingredient))
                                         .multilineTextAlignment(.center)
                                 }
                             }
@@ -48,7 +48,7 @@ struct RecipeView: View {
                         Text("\(recipe.name) Ingredients")
                             .font(.title2)
                         ForEach(recipe.ingredients) { ingredient in
-                            Text("\(String(describing: ingredient.measurementValue)) \(ingredient.unitOfMeasurement.measurementType) \(ingredient.ingredient.ingredientName)\(ingredient.note != nil ? ", \(ingredient.note!)" : "")")
+                            Text(formattedIngredientText(ingredient: ingredient))
                                 .multilineTextAlignment(.center)
                         }
                     }
@@ -93,6 +93,13 @@ struct RecipeView: View {
                 Spacer()
             }
         }
+    }
+    
+    private func formattedIngredientText(ingredient: RecipeIngredientDTO) -> String {
+        let measurementValue = recipeService.convertDecimalToFraction(valueToConvert: ingredient.measurementValue)
+        let unitOfMeasurement = ingredient.unitOfMeasurement.measurementType != "quantity" ? " \(ingredient.unitOfMeasurement.measurementType)" : ""
+        let note = ingredient.note != nil ? ", \(ingredient.note!)" : ""
+        return "\(measurementValue)\(unitOfMeasurement) \(ingredient.ingredient.ingredientName)\(note)"
     }
 }
 
