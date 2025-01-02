@@ -34,7 +34,7 @@ struct RecipeDTO: Identifiable {
                 id: 2,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
                 measurementValue: 2,
-                ingredient: IngredientDTO.butter,
+                ingredient: IngredientDTO.unsaltedButter,
                 note: "divided"
             ),
             RecipeIngredientDTO(
@@ -230,7 +230,7 @@ struct RecipeDTO: Identifiable {
                 id: 3104,
                 unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
                 measurementValue: 6,
-                ingredient: IngredientDTO.butter,
+                ingredient: IngredientDTO.unsaltedButter,
                 note: "melted"
             ),
             RecipeIngredientDTO(
@@ -263,7 +263,7 @@ struct RecipeDTO: Identifiable {
                 id: 202,
                 unitOfMeasurement: UnitsOfMeasurementDTO.cups,
                 measurementValue: 0.5,
-                ingredient: IngredientDTO.butter,
+                ingredient: IngredientDTO.unsaltedButter,
                 note: "room temperature, cut into cubes"
             ),
             RecipeIngredientDTO(
@@ -373,12 +373,217 @@ struct RecipeDTO: Identifiable {
         category: CategoryDTO.side
     )
     
+    static let `bananaFoster` = RecipeDTO(
+        id: 8,
+        name: "Banana Foster",
+        image: "bananaFoster",
+        ingredients: [
+            RecipeIngredientDTO(
+                id: 5001,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.unsaltedButter
+            ),
+            RecipeIngredientDTO(
+                id: 5002,
+                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
+                measurementValue: 2,
+                ingredient: IngredientDTO.bananas,
+                note: "sliced"
+            ),
+            RecipeIngredientDTO(
+                id: 5003,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 1,
+                ingredient: IngredientDTO.lightBrownSugar
+            ),
+            RecipeIngredientDTO(
+                id: 5004,
+                unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
+                measurementValue: 1,
+                ingredient: IngredientDTO.vanillaExtract
+            ),
+            RecipeIngredientDTO(
+                id: 5005,
+                unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
+                measurementValue: 0.5,
+                ingredient: IngredientDTO.cinnamon
+            ),
+            RecipeIngredientDTO(
+                id: 5006,
+                unitOfMeasurement: UnitsOfMeasurementDTO.pinch,
+                measurementValue: 1,
+                ingredient: IngredientDTO.salt
+            )
+        ],
+        recipeSteps: [
+            RecipeStepDTO(id: 5101, stepNumber: 1, text: "Melt butter in a saucepan over medium heat."),
+            RecipeStepDTO(id: 5102, stepNumber: 2, text: "Add sliced bananas and stir for 2 minutes."),
+            RecipeStepDTO(id: 5103, stepNumber: 3, text: "Add brown sugar, vanilla, cinnamon, and salt."),
+            RecipeStepDTO(id: 5104, stepNumber: 4, text: "Lower heat and continue cooking, stirring constantly for 2 more minutes."),
+            RecipeStepDTO(id: 5105, stepNumber: 5, text: "Serve over a scoop of ice cream."),
+            RecipeStepDTO(id: 5106, stepNumber: 6, text: "Note: 1 oz of booze may be added during the last 2 minutes of cooking (Rum works well). Add with the pan off of the heat - beware of flaming.")
+        ],
+        category: CategoryDTO.dessert
+    )
+    
+    static let `lemonButterSalmon` = RecipeDTO(
+        id: 9,
+        name: "Lemon Butter Salmon",
+        image: "lemonButterSalmon",
+        ingredients: [
+            RecipeIngredientDTO(
+                id: 6001,
+                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
+                measurementValue: 5,
+                ingredient: IngredientDTO.salmonFillets
+            ),
+            RecipeIngredientDTO(
+                id: 6002,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.oliveOil
+            ),
+            RecipeIngredientDTO(
+                id: 6003,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.dijonMustard
+            ),
+            RecipeIngredientDTO(
+                id: 6004,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.garlicCloves,
+                note: "minced"
+            ),
+            RecipeIngredientDTO(
+                id: 6005,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.lemonJuice
+            ),
+            RecipeIngredientDTO(
+                id: 6006,
+                unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
+                measurementValue: 0.5,
+                ingredient: IngredientDTO.blackPepper
+            ),
+            RecipeIngredientDTO(
+                id: 6007,
+                unitOfMeasurement: UnitsOfMeasurementDTO.pinch,
+                measurementValue: 1,
+                ingredient: IngredientDTO.salt,
+                note: "to taste"
+            )
+        ],
+        recipeSteps: [
+            RecipeStepDTO(
+                id: 6201,
+                stepNumber: 1,
+                text: "Preheat your oven to 425°F with the rack in the center."
+            ),
+            RecipeStepDTO(
+                id: 6202,
+                stepNumber: 2,
+                text: "In a medium bowl combine lemon juice, olive oil, garlic and Dijon mustard. Mix well."
+            ),
+            RecipeStepDTO(
+                id: 6203,
+                stepNumber: 3,
+                text: "Place salmon fillets into the skillet, pour the mixture over salmon fillets and rub. Season with ground black pepper and salt."
+            ),
+            RecipeStepDTO(
+                id: 6204,
+                stepNumber: 4,
+                text: "Bake for 10-15 minutes in the preheated oven."
+            ),
+            RecipeStepDTO(
+                id: 6305,
+                stepNumber: 5,
+                text: "Pour the lemon butter garlic sauce over the baked salmon and allow to rest for 5-10 minutes."
+            )
+        ],
+        category: CategoryDTO.entree,
+        helpfulRecipes: [RecipeDTO.lemonButterGarlicSauce]
+    )
+    
+    static let `lemonButterGarlicSauce` = RecipeDTO(
+        id: 9,
+        name: "Lemon Butter Garlic Sauce",
+        ingredients: [
+            RecipeIngredientDTO(
+                id: 6101,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 0.25,
+                ingredient: IngredientDTO.unsaltedButter,
+                note: "unsalted"
+            ),
+            RecipeIngredientDTO(
+                id: 6102,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 1.5,
+                ingredient: IngredientDTO.garlicCloves,
+                note: "minced"
+            ),
+            RecipeIngredientDTO(
+                id: 6103,
+                unitOfMeasurement: UnitsOfMeasurementDTO.cups,
+                measurementValue: 0.5,
+                ingredient: IngredientDTO.heavyWhippingCream
+            ),
+            RecipeIngredientDTO(
+                id: 6104,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 2,
+                ingredient: IngredientDTO.lemonJuice
+            ),
+            RecipeIngredientDTO(
+                id: 6105,
+                unitOfMeasurement: UnitsOfMeasurementDTO.tablespoons,
+                measurementValue: 1,
+                ingredient: IngredientDTO.parsley,
+                note: "finely chopped"
+            ),
+            RecipeIngredientDTO(
+                id: 6106,
+                unitOfMeasurement: UnitsOfMeasurementDTO.teaspoons,
+                measurementValue: 0.5,
+                ingredient: IngredientDTO.blackPepper
+            )
+        ],
+        recipeSteps: [
+            RecipeStepDTO(
+                id: 6301,
+                stepNumber: 1,
+                text: "While the salmon is in the oven, melt butter in a medium saucepan over low-medium heat."
+            ),
+            RecipeStepDTO(
+                id: 6302,
+                stepNumber: 2,
+                text: "Add the minced garlic and saute until fragrant, about 20 seconds."
+            ),
+            RecipeStepDTO(
+                id: 6303,
+                stepNumber: 3,
+                text: "Pour in heavy cream and bring to a boil. The sauce should thicken a little bit."),
+            RecipeStepDTO(
+                id: 6304,
+                stepNumber: 4,
+                text: "Take off the heat and stir in lemon juice if using. Garnish with parsley and season with black pepper and salt to your liking."
+            )
+        ],
+        category: CategoryDTO.entree
+    )
+    
     static let `offlineRecipes` = [
         RecipeDTO.garlicButterChickenTenders,
         RecipeDTO.pastaSalad,
         RecipeDTO.icedVanillaChai,
         RecipeDTO.frenchApplePie,
-        RecipeDTO.mapleBalsamicRoastedBrusselSprouts
+        RecipeDTO.mapleBalsamicRoastedBrusselSprouts,
+        RecipeDTO.bananaFoster,
+        RecipeDTO.lemonButterSalmon
     ]
 }
 
