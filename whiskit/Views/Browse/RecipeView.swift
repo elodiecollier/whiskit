@@ -16,48 +16,37 @@ struct RecipeView: View {
         ZStack {
             Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
             VStack {
-                Text(recipe.name)
-                    .frame(maxWidth: 300)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-                    .font(.title)
                 ScrollView {
                     VStack {
-                        Image(recipeService.recipeImage(recipeImage: recipe.image))
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .cornerRadius(20)
-                            .clipped()
-                        if let submittedBy = recipe.submittedBy {
-                            Text("Submitted by \(submittedBy)")
-                                .font(.caption)
-                        }
-                    }
-                    .padding(.top)
-                    .padding()
-                    VStack {
-                        if (recipe.helpfulRecipes != nil) {
-                            ForEach (recipe.helpfulRecipes!) { helpfulRecipe in
-                                Text("\(helpfulRecipe.name) Ingredients")
-                                    .font(.title2)
-                                    .multilineTextAlignment(.center)
-                                ForEach(helpfulRecipe.ingredients) { ingredient in
-                                    Text(formattedIngredientText(ingredient: ingredient))
+                        RecipeHeadingView(
+                            recipeName: recipe.name,
+                            recipeImage: recipe.image ?? "defaultFood",
+                            submittedByName: recipe.submittedBy ?? ""
+                        )
+                        VStack {
+                            if (recipe.helpfulRecipes != nil) {
+                                ForEach (recipe.helpfulRecipes!) { helpfulRecipe in
+                                    Text("\(helpfulRecipe.name) Ingredients")
+                                        .font(.title2)
                                         .multilineTextAlignment(.center)
+                                    ForEach(helpfulRecipe.ingredients) { ingredient in
+                                        Text(formattedIngredientText(ingredient: ingredient))
+                                            .multilineTextAlignment(.center)
+                                    }
                                 }
                             }
-                        }
-                        Text("\(recipe.name) Ingredients")
-                            .font(.title2)
-                            .multilineTextAlignment(.center)
-                        ForEach(recipe.ingredients) { ingredient in
-                            Text(formattedIngredientText(ingredient: ingredient))
+                            Text("\(recipe.name) Ingredients")
+                                .font(.title2)
                                 .multilineTextAlignment(.center)
+                            ForEach(recipe.ingredients) { ingredient in
+                                Text(formattedIngredientText(ingredient: ingredient))
+                                    .multilineTextAlignment(.center)
+                            }
                         }
+                        .padding()
+                        .background(Color(.green).opacity(0.3))
+                        .cornerRadius(20)
                     }
-                    .padding()
-                    .background(Color(.green).opacity(0.3))
-                    .cornerRadius(20)
                     VStack {
                         if (recipe.helpfulRecipes != nil) {
                             ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
