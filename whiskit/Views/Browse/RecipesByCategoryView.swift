@@ -18,8 +18,8 @@ struct RecipesByCategoryView: View {
     var body: some View {
         ZStack {
             Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
-            ScrollView(showsIndicators: false) {
-                VStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
                     if (filteredRecipes.isEmpty) {
                         Text("No recipes to show!")
                     }
@@ -33,6 +33,7 @@ struct RecipesByCategoryView: View {
                         }
                     }
                 }
+                .padding()
             }
             .fullScreenCover(item: $selectedRecipe) { recipe in
                 RecipeView(

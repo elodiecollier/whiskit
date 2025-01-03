@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeCategoriesView: View {
     @State private var filteredRecipes = RecipeDTO.offlineRecipes
+    @State private var selectedCategory: CategoryDTO? = nil
     
     var body: some View {
         ZStack {
@@ -31,17 +32,51 @@ struct RecipeCategoriesView: View {
                         HStack {
                             Button(action: {
                                 filteredRecipes = RecipeDTO.offlineRecipes
+                                selectedCategory = nil
                             }) {
-                                Text("All")
+                                VStack {
+                                    Image(systemName: "birthday.cake.fill")
+                                        .padding()
+                                        .background(
+                                            Circle()
+                                                .foregroundStyle(.white)
+                                                .opacity(0.2)
+                                        )
+                                        .foregroundStyle(.black)
+                                    Text("All")
+                                }
                             }
+                            .padding()
+                            .background(selectedCategory == nil ? Color.orange.opacity(0.3) : Color.clear)
+                            .cornerRadius(10)
+                            
                             ForEach(CategoryDTO.categories) { category in
                                 Button(action: {
                                     filteredRecipes = filterRecipesByCategory(selectedCategory: category)
+                                    selectedCategory = category
                                 }) {
-                                    Text(category.categoryName)
+                                    VStack {
+                                        Image(systemName: "birthday.cake.fill")
+                                            .padding()
+                                            .background(
+                                                Circle()
+                                                    .foregroundStyle(.white)
+                                                    .opacity(0.2)
+                                            )
+                                            .foregroundStyle(.black)
+                                        Text(category.categoryName)
+                                            .foregroundStyle(.black)
+                                    }
                                 }
+                                .padding()
+                                .background(selectedCategory == category ? Color.orange.opacity(0.3) : Color.clear)
+                                .cornerRadius(10)
                             }
                         }
+                        .background(
+                            RoundedRectangle(cornerRadius: 25.0, style: .continuous)
+                                .fill(Color.gray.opacity(0.2))
+                        )
                         .padding()
                     }
                     RecipesByCategoryView(filteredRecipes: filteredRecipes)
