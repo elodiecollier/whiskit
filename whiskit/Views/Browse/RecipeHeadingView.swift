@@ -22,7 +22,7 @@ struct RecipeHeadingView: View {
                     .padding(.top, 60)
                     .padding(.bottom, 10)
                 if !submittedByName.isEmpty {
-                    Text("Submitted by \(submittedByName)")
+                    Text("By \(submittedByName)")
                         .font(.footnote)
                         .foregroundColor(.white)
                         .padding(.bottom)

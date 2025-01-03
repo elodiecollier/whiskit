@@ -24,13 +24,11 @@ struct RecipesByCategoryView: View {
                         Text("No recipes to show!")
                     }
                     else {
-                        LazyVGrid(columns: columns, spacing: 16) {
-                            ForEach(filteredRecipes) { recipe in
-                                Button(action: {
-                                    openRecipe(tappedRecipe: recipe)
-                                }) {
-                                    RecipeTileView(recipe: recipe)
-                                }
+                        ForEach(filteredRecipes) { recipe in
+                            Button(action: {
+                                openRecipe(tappedRecipe: recipe)
+                            }) {
+                                RecipeTileView(recipe: recipe)
                             }
                         }
                     }

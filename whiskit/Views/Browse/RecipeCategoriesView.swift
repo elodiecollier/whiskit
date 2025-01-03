@@ -16,6 +16,8 @@ struct RecipeCategoriesView: View {
                 VStack {
                     ScrollView {
                         VStack {
+                            Text("Welcome!")
+                                .font(.custom("Coiny-Regular", size: 20))
                             ForEach(CategoryDTO.categories) { category in
                                 NavigationLink(
                                     destination: RecipesByCategoryView(filteredRecipes: filterRecipesByCategory(selectedCategory: category))
