@@ -8,28 +8,43 @@
 import SwiftUI
 
 struct RecipeCategoriesView: View {
+    @State private var filteredRecipes = RecipeDTO.offlineRecipes
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+        ZStack {
+            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+            VStack {
                 VStack {
-                    ScrollView {
-                        VStack {
-                            Text("Welcome!")
-                                .font(.custom("Coiny-Regular", size: 20))
+                    HStack {
+                        Text("Bon Appetit")
+                            .font(.custom("OldStandardTT-Bold", size: 40))
+                            .padding(.horizontal)
+                        Spacer()
+                    }
+                    HStack {
+                        Text("what are you hungry for?")
+                            .font(.custom("OldStandardTT-Regular", size: 20))
+                            .padding(.horizontal)
+                        Spacer()
+                    }
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            Button(action: {
+                                filteredRecipes = RecipeDTO.offlineRecipes
+                            }) {
+                                Text("All")
+                            }
                             ForEach(CategoryDTO.categories) { category in
-                                NavigationLink(
-                                    destination: RecipesByCategoryView(filteredRecipes: filterRecipesByCategory(selectedCategory: category))
-                                ) {
-                                    Image(category.buttonImage)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .padding(.horizontal)
+                                Button(action: {
+                                    filteredRecipes = filterRecipesByCategory(selectedCategory: category)
+                                }) {
+                                    Text(category.categoryName)
                                 }
                             }
                         }
+                        .padding()
                     }
+                    RecipesByCategoryView(filteredRecipes: filteredRecipes)
                 }
             }
         }

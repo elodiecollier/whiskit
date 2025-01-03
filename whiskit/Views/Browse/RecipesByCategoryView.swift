@@ -18,7 +18,7 @@ struct RecipesByCategoryView: View {
     var body: some View {
         ZStack {
             Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     if (filteredRecipes.isEmpty) {
                         Text("No recipes to show!")

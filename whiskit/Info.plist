@@ -4,7 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>OldStandardTT-Regular.ttf</string>
+		<string>OldStandardTT-Italic.ttf</string>
 		<string>Coiny-Regular.ttf</string>
+		<string>OldStandardTT-Bold.ttf</string>
 	</array>
 </dict>
 </plist>

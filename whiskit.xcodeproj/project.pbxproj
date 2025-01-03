@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FD37222C2D2729DD00877333 /* RecipeHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37222B2D2729DD00877333 /* RecipeHeadingView.swift */; };
 		FD3722352D2895ED00877333 /* Coiny-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722342D2895A900877333 /* Coiny-Regular.ttf */; };
+		FD37223B2D289B1B00877333 /* OldStandardTT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722392D289ACD00877333 /* OldStandardTT-Bold.ttf */; };
+		FD37223C2D289B1B00877333 /* OldStandardTT-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */; };
+		FD37223D2D289B1B00877333 /* OldStandardTT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD37223A2D289ACD00877333 /* OldStandardTT-Regular.ttf */; };
 		FD9E64C12D02A4EF00DA10FF /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */; };
 		FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */; };
 		FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */; };
@@ -55,6 +58,9 @@
 		FD37222B2D2729DD00877333 /* RecipeHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeadingView.swift; sourceTree = "<group>"; };
 		FD3722332D28958500877333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD3722342D2895A900877333 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coiny-Regular.ttf"; sourceTree = "<group>"; };
+		FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Italic.ttf"; sourceTree = "<group>"; };
+		FD3722392D289ACD00877333 /* OldStandardTT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Bold.ttf"; sourceTree = "<group>"; };
+		FD37223A2D289ACD00877333 /* OldStandardTT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Regular.ttf"; sourceTree = "<group>"; };
 		FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingBasicDTO.swift; sourceTree = "<group>"; };
 		FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBasicView.swift; sourceTree = "<group>"; };
@@ -112,9 +118,28 @@
 		FD3722322D28943300877333 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FD3722342D2895A900877333 /* Coiny-Regular.ttf */,
+				FD3722372D289AAA00877333 /* Old-Standard-TT */,
+				FD3722362D289A7800877333 /* Coiny */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD3722362D289A7800877333 /* Coiny */ = {
+			isa = PBXGroup;
+			children = (
+				FD3722342D2895A900877333 /* Coiny-Regular.ttf */,
+			);
+			path = Coiny;
+			sourceTree = "<group>";
+		};
+		FD3722372D289AAA00877333 /* Old-Standard-TT */ = {
+			isa = PBXGroup;
+			children = (
+				FD3722392D289ACD00877333 /* OldStandardTT-Bold.ttf */,
+				FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */,
+				FD37223A2D289ACD00877333 /* OldStandardTT-Regular.ttf */,
+			);
+			path = "Old-Standard-TT";
 			sourceTree = "<group>";
 		};
 		FD9E64BF2D02A4DB00DA10FF /* GroceryList */ = {
@@ -377,6 +402,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD37223B2D289B1B00877333 /* OldStandardTT-Bold.ttf in Resources */,
+				FD37223C2D289B1B00877333 /* OldStandardTT-Italic.ttf in Resources */,
+				FD37223D2D289B1B00877333 /* OldStandardTT-Regular.ttf in Resources */,
 				FD3722352D2895ED00877333 /* Coiny-Regular.ttf in Resources */,
 				FDDA2DC52CAF8D0700DA7957 /* Preview Assets.xcassets in Resources */,
 				FDDA2DC12CAF8D0700DA7957 /* Assets.xcassets in Resources */,
