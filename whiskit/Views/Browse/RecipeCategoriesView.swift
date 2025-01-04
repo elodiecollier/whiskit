@@ -39,7 +39,7 @@ struct RecipeCategoriesView: View {
                                         .padding()
                                         .background(
                                             Circle()
-                                                .foregroundStyle(.white)
+                                                .foregroundStyle(selectedCategory == nil ? Color.orange.opacity(0.8) : Color.clear)
                                                 .opacity(0.2)
                                         )
                                         .foregroundStyle(.black)
@@ -47,7 +47,6 @@ struct RecipeCategoriesView: View {
                                 }
                             }
                             .padding()
-                            .background(selectedCategory == nil ? Color.orange.opacity(0.3) : Color.clear)
                             .cornerRadius(10)
                             
                             ForEach(CategoryDTO.categories) { category in
@@ -60,7 +59,7 @@ struct RecipeCategoriesView: View {
                                             .padding()
                                             .background(
                                                 Circle()
-                                                    .foregroundStyle(.white)
+                                                    .foregroundStyle(selectedCategory == category ? Color.orange.opacity(0.8) : Color.clear)
                                                     .opacity(0.2)
                                             )
                                             .foregroundStyle(.black)
@@ -69,7 +68,6 @@ struct RecipeCategoriesView: View {
                                     }
                                 }
                                 .padding()
-                                .background(selectedCategory == category ? Color.orange.opacity(0.3) : Color.clear)
                                 .cornerRadius(10)
                             }
                         }
