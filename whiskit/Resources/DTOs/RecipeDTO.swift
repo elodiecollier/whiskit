@@ -17,6 +17,7 @@ struct RecipeDTO: Identifiable {
     var category: CategoryDTO
     var helpfulRecipes: [RecipeDTO]?
     var helpfulBasics: [CookingBasicDTO]?
+    var tags: [TagDTO]?
     
     static let `garlicButterChickenTenders` = RecipeDTO(
         id: 1,
@@ -83,7 +84,8 @@ struct RecipeDTO: Identifiable {
             )
         ],
         recipeSteps: RecipeStepDTO.garlicButterChickenTendersSteps,
-        category: CategoryDTO.entree
+        category: CategoryDTO.entree,
+        tags: [TagDTO.poultry]
     )
     
     static let `default` = RecipeDTO(
@@ -148,7 +150,8 @@ struct RecipeDTO: Identifiable {
             RecipeStepDTO(id: 13, stepNumber: 3, text: "Stir the balsamic vinegar into your tomato mixture."),
             RecipeStepDTO(id: 14, stepNumber: 4, text: "Toss tomato mixture with pasta and feta cheese in large bowl. Serve cold!")
         ],
-        category: CategoryDTO.entree
+        category: CategoryDTO.entree,
+        tags: [TagDTO.vegetarian]
     )
     
     static let `icedVanillaChai` = RecipeDTO(
@@ -200,7 +203,8 @@ struct RecipeDTO: Identifiable {
             RecipeStepDTO(id: 1103, stepNumber: 3, text: "Sprinkle cinnamon on top for aesthetic.")
         ],
         category: CategoryDTO.beverage,
-        helpfulBasics: [CookingBasicDTO.makeChaiConcentrateEasy]
+        helpfulBasics: [CookingBasicDTO.makeChaiConcentrateEasy],
+        tags: [TagDTO.breakfast]
     )
     
     static let `frenchApplePie` = RecipeDTO(
@@ -370,7 +374,8 @@ struct RecipeDTO: Identifiable {
             RecipeStepDTO(id: 41016, stepNumber: 6, text: "Once the brussel sprouts are done, add them to a bowl with dried cranberries and goat cheese. Drizzle the glaze over the top and toss until coated to your liking."),
             RecipeStepDTO(id: 41017, stepNumber: 7, text: "Serve with chopped pecans sprinkled over top.")
         ],
-        category: CategoryDTO.side
+        category: CategoryDTO.side,
+        tags: [TagDTO.vegetarian, TagDTO.glutenFree]
     )
     
     static let `bananaFoster` = RecipeDTO(
@@ -424,7 +429,8 @@ struct RecipeDTO: Identifiable {
             RecipeStepDTO(id: 5105, stepNumber: 5, text: "Serve over a scoop of ice cream."),
             RecipeStepDTO(id: 5106, stepNumber: 6, text: "Note: 1 oz of booze may be added during the last 2 minutes of cooking (Rum works well). Add with the pan off of the heat - beware of flaming.")
         ],
-        category: CategoryDTO.dessert
+        category: CategoryDTO.dessert,
+        tags: [TagDTO.glutenFree]
     )
     
     static let `lemonButterSalmon` = RecipeDTO(
@@ -505,7 +511,8 @@ struct RecipeDTO: Identifiable {
             )
         ],
         category: CategoryDTO.entree,
-        helpfulRecipes: [RecipeDTO.lemonButterGarlicSauce]
+        helpfulRecipes: [RecipeDTO.lemonButterGarlicSauce],
+        tags: [TagDTO.seafood]
     )
     
     static let `lemonButterGarlicSauce` = RecipeDTO(
@@ -670,7 +677,8 @@ struct RecipeDTO: Identifiable {
                 text: "Stir in half and half and spinach and cook another 1-2 minutes until spinach is tender. Taste, add salt and pepper if needed, and serve."
             )
         ],
-        category: CategoryDTO.entree
+        category: CategoryDTO.entree,
+        tags: [TagDTO.poultry]
     )
     
     static let `offlineRecipes` = [

@@ -14,7 +14,7 @@ struct RecipeTileView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
-                .fill(Color.gray.opacity(0.2))
+                .fill(Color("backgroundPrimary"))
                 .frame(width: 170, height: 220)
             VStack(spacing: 8) {
                 Spacer()

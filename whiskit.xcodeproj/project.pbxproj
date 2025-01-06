@@ -12,6 +12,7 @@
 		FD37223B2D289B1B00877333 /* OldStandardTT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722392D289ACD00877333 /* OldStandardTT-Bold.ttf */; };
 		FD37223C2D289B1B00877333 /* OldStandardTT-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */; };
 		FD37223D2D289B1B00877333 /* OldStandardTT-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD37223A2D289ACD00877333 /* OldStandardTT-Regular.ttf */; };
+		FD37223F2D29F3E500877333 /* TagDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37223E2D29F3E500877333 /* TagDTO.swift */; };
 		FD9E64C12D02A4EF00DA10FF /* GroceryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */; };
 		FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */; };
 		FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */; };
@@ -61,6 +62,7 @@
 		FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Italic.ttf"; sourceTree = "<group>"; };
 		FD3722392D289ACD00877333 /* OldStandardTT-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Bold.ttf"; sourceTree = "<group>"; };
 		FD37223A2D289ACD00877333 /* OldStandardTT-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Regular.ttf"; sourceTree = "<group>"; };
+		FD37223E2D29F3E500877333 /* TagDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDTO.swift; sourceTree = "<group>"; };
 		FD9E64C02D02A4EF00DA10FF /* GroceryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListView.swift; sourceTree = "<group>"; };
 		FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingBasicDTO.swift; sourceTree = "<group>"; };
 		FDCDAC6A2CE702DA0071AD0E /* SelectedBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedBasicView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				FDDA2E082CAFA38800DA7957 /* RecipeStepDTO.swift */,
 				FDCDAC642CE6FCA40071AD0E /* CookingBasicDTO.swift */,
 				FDCDAC6E2D022C110071AD0E /* CategoryDTO.swift */,
+				FD37223E2D29F3E500877333 /* TagDTO.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				FDDA2E1A2CB21E0100DA7957 /* RecipeServiceProtocol.swift in Sources */,
 				FDDA2E182CB21DCD00DA7957 /* RecipeService.swift in Sources */,
 				FDDA2DF02CAF8DFD00DA7957 /* TabBarView.swift in Sources */,
+				FD37223F2D29F3E500877333 /* TagDTO.swift in Sources */,
 				FDCDAC732D0294500071AD0E /* RecipesByCategoryView.swift in Sources */,
 				FD9E64C12D02A4EF00DA10FF /* GroceryListView.swift in Sources */,
 				FDDA2DF62CAF8F6A00DA7957 /* BasicsView.swift in Sources */,

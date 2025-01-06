@@ -17,7 +17,6 @@ struct RecipesByCategoryView: View {
     
     var body: some View {
         ZStack {
-            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     if (filteredRecipes.isEmpty) {

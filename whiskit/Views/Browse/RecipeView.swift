@@ -28,19 +28,15 @@ struct RecipeView: View {
                                 ForEach (recipe.helpfulRecipes!) { helpfulRecipe in
                                     Text("\(helpfulRecipe.name) Ingredients")
                                         .font(.title2)
-                                        .multilineTextAlignment(.center)
                                     ForEach(helpfulRecipe.ingredients) { ingredient in
                                         Text(formattedIngredientText(ingredient: ingredient))
-                                            .multilineTextAlignment(.center)
                                     }
                                 }
                             }
                             Text("\(recipe.name) Ingredients")
                                 .font(.title2)
-                                .multilineTextAlignment(.center)
                             ForEach(recipe.ingredients) { ingredient in
                                 Text(formattedIngredientText(ingredient: ingredient))
-                                    .multilineTextAlignment(.center)
                             }
                         }
                         .padding()

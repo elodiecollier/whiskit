@@ -13,7 +13,7 @@ struct RecipeCategoriesView: View {
     
     var body: some View {
         ZStack {
-            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
+            Color.white.edgesIgnoringSafeArea(.all)
             VStack {
                 VStack {
                     HStack {
