@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD37222C2D2729DD00877333 /* RecipeHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37222B2D2729DD00877333 /* RecipeHeadingView.swift */; };
 		FD3722352D2895ED00877333 /* Coiny-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722342D2895A900877333 /* Coiny-Regular.ttf */; };
 		FD37223B2D289B1B00877333 /* OldStandardTT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722392D289ACD00877333 /* OldStandardTT-Bold.ttf */; };
 		FD37223C2D289B1B00877333 /* OldStandardTT-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */; };
@@ -56,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD37222B2D2729DD00877333 /* RecipeHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeadingView.swift; sourceTree = "<group>"; };
 		FD3722332D28958500877333 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD3722342D2895A900877333 /* Coiny-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coiny-Regular.ttf"; sourceTree = "<group>"; };
 		FD3722382D289ACD00877333 /* OldStandardTT-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OldStandardTT-Italic.ttf"; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 				FDDA2DF92CAF9B2100DA7957 /* RecipeTileView.swift */,
 				FDDA2E132CB1DE0500DA7957 /* RecipeView.swift */,
 				FDCDAC722D0294500071AD0E /* RecipesByCategoryView.swift */,
-				FD37222B2D2729DD00877333 /* RecipeHeadingView.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -442,7 +439,6 @@
 				FDDA2DEC2CAF8D7900DA7957 /* HomeView.swift in Sources */,
 				FDDA2DBF2CAF8D0600DA7957 /* ContentView.swift in Sources */,
 				FDCDAC652CE6FCA40071AD0E /* CookingBasicDTO.swift in Sources */,
-				FD37222C2D2729DD00877333 /* RecipeHeadingView.swift in Sources */,
 				FDDA2E142CB1DE0500DA7957 /* RecipeView.swift in Sources */,
 				FDCDAC6B2CE702DA0071AD0E /* SelectedBasicView.swift in Sources */,
 				FDDA2DF22CAF8E6600DA7957 /* RecipeCategoriesView.swift in Sources */,

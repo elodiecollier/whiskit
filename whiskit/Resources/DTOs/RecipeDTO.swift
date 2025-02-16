@@ -681,6 +681,105 @@ struct RecipeDTO: Identifiable {
         tags: [TagDTO.poultry]
     )
     
+    static let `lemonGarlicDrumsticks` = RecipeDTO(
+        id: 11,
+        name: "Lemon Garlic Drumsticks",
+        image: "chickenLegs",
+        ingredients: [
+            RecipeIngredientDTO(
+                id: 110,
+                unitOfMeasurement: UnitsOfMeasurementDTO.quantity,
+                measurementValue: 4,
+                ingredient: IngredientDTO.chickenDrumsticks
+            ),
+            RecipeIngredientDTO(
+                id: 111,
+                unitOfMeasurement: UnitsOfMeasurementDTO.splash,
+                measurementValue: 3,
+                ingredient: IngredientDTO.oliveOil
+            ),
+            RecipeIngredientDTO(
+                id: 112,
+                unitOfMeasurement: UnitsOfMeasurementDTO.sprinkle,
+                measurementValue: 1,
+                ingredient: IngredientDTO.salt
+            ),
+            RecipeIngredientDTO(
+                id: 113,
+                unitOfMeasurement: UnitsOfMeasurementDTO.sprinkle,
+                measurementValue: 1,
+                ingredient: IngredientDTO.blackPepper
+            ),
+            RecipeIngredientDTO(
+                id: 114,
+                unitOfMeasurement: UnitsOfMeasurementDTO.sprinkle,
+                measurementValue: 1,
+                ingredient: IngredientDTO.thyme
+            ),
+            RecipeIngredientDTO(
+                id: 115,
+                unitOfMeasurement: UnitsOfMeasurementDTO.sprinkle,
+                measurementValue: 1,
+                ingredient: IngredientDTO.garlicPowder
+            ),
+            RecipeIngredientDTO(
+                id: 116,
+                unitOfMeasurement: UnitsOfMeasurementDTO.splash,
+                measurementValue: 1,
+                ingredient: IngredientDTO.chickenBroth
+            )
+        ],
+        recipeSteps: [
+            RecipeStepDTO(
+                id: 201,
+                stepNumber: 1,
+                text: "Finely slice the lemon and white onion. Set aside."
+            ),
+            RecipeStepDTO(
+                id: 202,
+                stepNumber: 2,
+                text: "In a large resealable bag, combine chicken drumsticks, olive oil, salt, pepper, dried thyme, and garlic powder. Seal the bag and shake to evenly coat the chicken. Let it marinate for at least 30 minutes or up to overnight for deeper flavor."
+            ),
+            RecipeStepDTO(
+                id: 203,
+                stepNumber: 3,
+                text: "Preheat the oven to 450°F (230°C)."
+            ),
+            RecipeStepDTO(
+                id: 204,
+                stepNumber: 4,
+                text: "Arrange the sliced onion and lemon in a single layer at the bottom of a baking dish."
+            ),
+            RecipeStepDTO(
+                id: 205,
+                stepNumber: 5,
+                text: "Place the marinated chicken drumsticks on top of the onion and lemon slices. Pour any remaining marinade over the chicken."
+            ),
+            RecipeStepDTO(
+                id: 206,
+                stepNumber: 6,
+                text: "Lightly sprinkle additional salt and pepper over the chicken for extra seasoning."
+            ),
+            RecipeStepDTO(
+                id: 207,
+                stepNumber: 7,
+                text: "Bake in the preheated oven for 30-35 minutes. Halfway through cooking, add the chicken broth to the pan to keep the chicken moist."
+            ),
+            RecipeStepDTO(
+                id: 208,
+                stepNumber: 8,
+                text: "Continue baking for another 15 minutes or until the chicken reaches an internal temperature of 165°F (74°C) and the skin is golden and crispy."
+            ),
+            RecipeStepDTO(
+                id: 209,
+                stepNumber: 9,
+                text: "Remove from the oven and let rest for a few minutes before serving. Enjoy!"
+            )
+        ],
+        category: CategoryDTO.entree,
+        tags: [TagDTO.poultry]
+    )
+    
     static let `offlineRecipes` = [
         RecipeDTO.garlicButterChickenTenders,
         RecipeDTO.pastaSalad,
@@ -689,7 +788,8 @@ struct RecipeDTO: Identifiable {
         RecipeDTO.mapleBalsamicRoastedBrusselSprouts,
         RecipeDTO.bananaFoster,
         RecipeDTO.lemonButterSalmon,
-        RecipeDTO.chickenGnocchiSoup
+        RecipeDTO.chickenGnocchiSoup,
+        RecipeDTO.lemonGarlicDrumsticks
     ]
 }
 

@@ -14,58 +14,78 @@ struct RecipeView: View {
     
     var body: some View {
         ZStack {
-            Color("backgroundPrimary").edgesIgnoringSafeArea(.all)
-            VStack {
-                ScrollView {
-                    VStack {
-                        RecipeHeadingView(
-                            recipeName: recipe.name,
-                            recipeImage: recipe.image ?? "defaultFood",
-                            submittedByName: recipe.submittedBy ?? ""
-                        )
-                        VStack {
-                            if (recipe.helpfulRecipes != nil) {
-                                ForEach (recipe.helpfulRecipes!) { helpfulRecipe in
-                                    Text("\(helpfulRecipe.name) Ingredients")
-                                        .font(.title2)
-                                    ForEach(helpfulRecipe.ingredients) { ingredient in
-                                        Text(formattedIngredientText(ingredient: ingredient))
-                                    }
-                                }
-                            }
-                            Text("\(recipe.name) Ingredients")
-                                .font(.title2)
-                            ForEach(recipe.ingredients) { ingredient in
-                                Text(formattedIngredientText(ingredient: ingredient))
-                            }
+            ScrollView {
+                VStack {
+                    Image("logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100)
+                    Image(recipeService.recipeImage(recipeImage: recipe.image))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 300, height: 300)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .shadow(radius: 10)
+                        .padding()
+                        .background {
+                            RoundedRectangle(cornerRadius: 29)
+                                .fill(Color("WhiskitOrange")).opacity(0.7)
                         }
                         .padding()
-                        .background(Color(.green).opacity(0.3))
-                        .cornerRadius(20)
+                    HStack {
+                        Text(recipe.name)
+                            .padding()
+                        Spacer()
                     }
-                    VStack {
-                        if (recipe.helpfulRecipes != nil) {
-                            ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
-                                Text("\(helpfulRecipe.name) Steps")
-                                    .font(.title2)
-                                ForEach(helpfulRecipe.recipeSteps) { step in
-                                    Text("\(step.stepNumber). \(step.text)")
-                                        .padding()
-                                }
-                            }
-                            .padding(.bottom)
-                        }
-                        Text("\(recipe.name) Steps")
-                            .font(.title2)
-                        ForEach(recipe.recipeSteps) { step in
-                            Text("\(step.stepNumber). \(step.text)")
-                                .padding()
-                        }
-                    }
-                    .padding()
-                    .background(Color(.yellow).opacity(0.3))
-                    .cornerRadius(20)
-                    .padding()
+                }
+            }
+            VStack {
+                ScrollView {
+//                    VStack {
+//                        VStack {
+//                            if (recipe.helpfulRecipes != nil) {
+//                                ForEach (recipe.helpfulRecipes!) { helpfulRecipe in
+//                                    Text("\(helpfulRecipe.name) Ingredients")
+//                                        .font(.title2)
+//                                    ForEach(helpfulRecipe.ingredients) { ingredient in
+//                                        Text(formattedIngredientText(ingredient: ingredient))
+//                                    }
+//                                }
+//                            }
+//                            Text("\(recipe.name) Ingredients")
+//                                .font(.title2)
+//                            ForEach(recipe.ingredients) { ingredient in
+//                                Text(formattedIngredientText(ingredient: ingredient))
+//                            }
+//                        }
+//                        .padding()
+//                        .background(Color(.green).opacity(0.3))
+//                        .cornerRadius(20)
+//                    }
+//                    VStack {
+//                        if (recipe.helpfulRecipes != nil) {
+//                            ForEach(recipe.helpfulRecipes!) { helpfulRecipe in
+//                                Text("\(helpfulRecipe.name) Steps")
+//                                    .font(.title2)
+//                                ForEach(helpfulRecipe.recipeSteps) { step in
+//                                    Text("\(step.stepNumber). \(step.text)")
+//                                        .padding()
+//                                }
+//                            }
+//                            .padding(.bottom)
+//                        }
+//                        Text("\(recipe.name) Steps")
+//                            .font(.title2)
+//                        ForEach(recipe.recipeSteps) { step in
+//                            Text("\(step.stepNumber). \(step.text)")
+//                                .padding()
+//                        }
+//                    }
+//                    .padding()
+//                    .background(Color(.yellow).opacity(0.3))
+//                    .cornerRadius(20)
+//                    .padding()
                 }
             }
             VStack {
