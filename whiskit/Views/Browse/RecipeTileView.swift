@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeTileView: View {
     let recipe: RecipeDTO
+    let recipeIndex: Int
     let recipeService = RecipeService()
     
     var body: some View {
@@ -16,6 +17,12 @@ struct RecipeTileView: View {
             RoundedRectangle(cornerRadius: 25.0, style: .continuous)
                 .fill(Color("backgroundPrimary"))
                 .frame(width: 170, height: 220)
+                .shadow(radius: 10)
+            Image(recipeIndex % 2 == 0 ? "squiggleLeft" : "squiggleRight")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 170)
+                .padding(.top, 30)
             VStack(spacing: 8) {
                 Spacer()
                 Text(recipe.name)
@@ -46,6 +53,7 @@ struct RecipeTileView: View {
 
 #Preview {
     RecipeTileView(
-        recipe: RecipeDTO.default
+        recipe: RecipeDTO.default,
+        recipeIndex: 0
     )
 }

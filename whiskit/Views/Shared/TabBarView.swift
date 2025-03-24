@@ -22,10 +22,12 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Basics", systemImage: "frying.pan.fill")
                 }
-            GroceryListView()
-                .tabItem{
-                    Label("Groceries", systemImage: "carrot.fill")
-                }
+            if (false) {
+                GroceryListView()
+                    .tabItem{
+                        Label("Groceries", systemImage: "carrot.fill")
+                    }
+            }
         }
     }
 }

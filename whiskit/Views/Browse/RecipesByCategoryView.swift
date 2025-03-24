@@ -23,11 +23,14 @@ struct RecipesByCategoryView: View {
                         Text("No recipes to show!")
                     }
                     else {
-                        ForEach(filteredRecipes) { recipe in
+                        ForEach(Array(filteredRecipes.enumerated()), id: \.element.id) { index, recipe in
                             Button(action: {
                                 openRecipe(tappedRecipe: recipe)
                             }) {
-                                RecipeTileView(recipe: recipe)
+                                RecipeTileView(
+                                    recipe: recipe,
+                                    recipeIndex: index
+                                )
                             }
                         }
                     }
